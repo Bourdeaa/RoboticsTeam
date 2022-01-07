@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name STM32F7)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/MCU_ST_STM32F7.lib)(options "")(descr ""))
+  (lib (name JST6Way)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/JST6Way.lib)(options "")(descr ""))
+  (lib (name JST4Way)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/JST4Way.lib)(options "")(descr ""))
+  (lib (name JST8Way)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/JST8Way.lib)(options "")(descr ""))
+  (lib (name LEDResistor)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/LEDResistor.lib)(options "")(descr ""))
+  (lib (name JST2Way)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/JST2Way.lib)(options "")(descr ""))
+  (lib (name MCP2562)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/MCP2562.lib)(options "")(descr ""))
+  (lib (name DriverBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/DriverBoard-rescue.lib)(options "")(descr ""))
+)
