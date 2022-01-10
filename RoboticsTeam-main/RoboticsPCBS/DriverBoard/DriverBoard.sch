@@ -597,21 +597,19 @@ Text GLabel 1350 1500 2    50   Input ~ 0
 I2C-2-INT
 Text GLabel 3250 1400 0    50   Input ~ 0
 I2C-4-INT1
-Text Notes 11800 8050 0    50   ~ 0
+Text Notes 11750 7450 0    50   ~ 0
 UART-USB Breakout
 $Comp
 L power:+5V #PWR0142
 U 1 1 61B84236
-P 14150 8150
-F 0 "#PWR0142" H 14150 8000 50  0001 C CNN
-F 1 "+5V" H 14165 8323 50  0000 C CNN
-F 2 "" H 14150 8150 50  0001 C CNN
-F 3 "" H 14150 8150 50  0001 C CNN
-	1    14150 8150
+P 14150 7450
+F 0 "#PWR0142" H 14150 7300 50  0001 C CNN
+F 1 "+5V" H 14000 7550 50  0000 C CNN
+F 2 "" H 14150 7450 50  0001 C CNN
+F 3 "" H 14150 7450 50  0001 C CNN
+	1    14150 7450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14150 8150 14350 8150
 $Comp
 L power:GND #PWR0143
 U 1 1 61B8365D
@@ -629,8 +627,8 @@ $Comp
 L Interface_USB:FT230XS U2
 U 1 1 61B73CB1
 P 14450 8900
-F 0 "U2" H 14450 9800 50  0000 C CNN
-F 1 "FT230XS" H 14450 9700 50  0000 C CNN
+F 0 "U2" H 13950 9500 50  0000 C CNN
+F 1 "FT230XS" H 14450 8900 50  0000 C CNN
 F 2 "DriverBoard:FT230XS" H 15450 8300 50  0001 C CNN
 F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 14450 8900 50  0001 C CNN
 	1    14450 8900
@@ -647,18 +645,10 @@ F 3 "" H 14350 9600 50  0001 C CNN
 	1    14350 9600
 	1    0    0    -1  
 $EndComp
-Wire Notes Line style solid
-	16050 7900 16050 9950
 Text GLabel 15150 8500 2    50   Input ~ 0
 UART-7-TXD
 Text GLabel 15150 8600 2    50   Input ~ 0
 UART-7-RXD
-Wire Notes Line style solid
-	11750 7900 11750 9950
-Wire Notes Line style solid
-	11750 7900 15500 7900
-Wire Notes Line style solid
-	15550 7900 16050 7900
 Text GLabel 15150 8700 2    50   Input ~ 0
 UART-7-RTS
 Text GLabel 15150 8800 2    50   Input ~ 0
@@ -697,23 +687,23 @@ Text GLabel 10350 2500 2    50   Input ~ 0
 Drive1-PWMA
 Text GLabel 10350 2600 2    50   Input ~ 0
 Drive1-PWMB
-Text GLabel 10350 2700 2    50   Input ~ 0
+Text GLabel 10350 8000 2    50   Input ~ 0
 Drive2-PWMA
-Text GLabel 7950 8200 0    50   Input ~ 0
+Text GLabel 10350 8100 2    50   Input ~ 0
 Drive2-PWMB
-Text GLabel 10350 2200 2    50   Input ~ 0
+Text GLabel 10350 2700 2    50   Input ~ 0
 Drive3-PWMA
-Text GLabel 10350 1800 2    50   Input ~ 0
+Text GLabel 7950 8200 0    50   Input ~ 0
 Drive3-PWMB
-Text GLabel 7950 7300 0    50   Input ~ 0
+Text GLabel 10350 2200 2    50   Input ~ 0
 Steer1-PWMA
 Text GLabel 5650 6100 2    50   Input ~ 0
 Steer1-PWMB
-Text GLabel 7950 7400 0    50   Input ~ 0
+Text GLabel 10350 1800 2    50   Input ~ 0
 Steer1-PWMB
-Text GLabel 10350 8000 2    50   Input ~ 0
+Text GLabel 7950 5900 0    50   Input ~ 0
 Steer2-PWMA
-Text GLabel 10350 8100 2    50   Input ~ 0
+Text GLabel 7950 6000 0    50   Input ~ 0
 Steer2-PWMB
 Text GLabel 10350 8200 2    50   Input ~ 0
 Steer3-PWMA
@@ -1014,7 +1004,7 @@ Text GLabel 9100 9150 1    50   Input ~ 0
 LED1
 Text GLabel 10350 7000 2    50   Input ~ 0
 LED1
-Text GLabel 10350 7100 2    50   Input ~ 0
+Text GLabel 7950 3900 0    50   Input ~ 0
 LED2
 Text GLabel 10100 9150 1    50   Input ~ 0
 LED2
@@ -1070,17 +1060,6 @@ F 4 "Microchip" H 13200 2450 50  0001 L BNN "MANUFACTURER"
 $EndComp
 Wire Wire Line
 	13900 2350 14400 2350
-$Comp
-L power:+1V8 #PWR0101
-U 1 1 61BEEAEB
-P 14400 2200
-F 0 "#PWR0101" H 14400 2050 50  0001 C CNN
-F 1 "+1V8" H 14415 2373 50  0000 C CNN
-F 2 "" H 14400 2200 50  0001 C CNN
-F 3 "" H 14400 2200 50  0001 C CNN
-	1    14400 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14400 2350 14400 2450
 Connection ~ 14400 2350
@@ -1169,13 +1148,13 @@ Text GLabel 13900 2450 2    50   Input ~ 0
 CAN1-RXD
 Text GLabel 12500 2350 0    50   Input ~ 0
 CAN1-TXD
-Text GLabel 10350 6600 2    50   Input ~ 0
+Text GLabel 7950 3500 0    50   Input ~ 0
 CAN1-STBY
 Text GLabel 12500 2250 0    50   Input ~ 0
 CAN1-STBY
-Text GLabel 10350 4100 2    50   Input ~ 0
-CAN2-STBY
 Text GLabel 10350 3600 2    50   Input ~ 0
+CAN2-STBY
+Text GLabel 7950 8000 0    50   Input ~ 0
 CAN3-STBY
 $Comp
 L Connector:Conn_01x02_Male J23
@@ -1239,17 +1218,6 @@ F 4 "Microchip" H 13250 4150 50  0001 L BNN "MANUFACTURER"
 $EndComp
 Wire Wire Line
 	13950 4050 14450 4050
-$Comp
-L power:+1V8 #PWR0106
-U 1 1 61C67464
-P 14450 3900
-F 0 "#PWR0106" H 14450 3750 50  0001 C CNN
-F 1 "+1V8" H 14465 4073 50  0000 C CNN
-F 2 "" H 14450 3900 50  0001 C CNN
-F 3 "" H 14450 3900 50  0001 C CNN
-	1    14450 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14450 4050 14450 4150
 Connection ~ 14450 4050
@@ -1404,17 +1372,6 @@ F 4 "Microchip" H 13300 5850 50  0001 L BNN "MANUFACTURER"
 $EndComp
 Wire Wire Line
 	14000 5750 14500 5750
-$Comp
-L power:+1V8 #PWR0113
-U 1 1 61C9E52E
-P 14500 5600
-F 0 "#PWR0113" H 14500 5450 50  0001 C CNN
-F 1 "+1V8" H 14515 5773 50  0000 C CNN
-F 2 "" H 14500 5600 50  0001 C CNN
-F 3 "" H 14500 5600 50  0001 C CNN
-	1    14500 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14500 5750 14500 5850
 Connection ~ 14500 5750
@@ -1658,8 +1615,6 @@ NoConn ~ 15150 9200
 NoConn ~ 15150 9300
 Text GLabel 5950 10150 2    50   Input ~ 0
 SabreTX
-Text GLabel 10350 6300 2    50   Input ~ 0
-SabreTX
 Wire Notes Line style solid
 	6500 10400 6500 9650
 Wire Notes Line style solid
@@ -1696,20 +1651,9 @@ Wire Wire Line
 	6400 9950 5950 9950
 Wire Wire Line
 	5950 9950 5950 10050
-$Comp
-L MCU_ST_STM32F7:STM32F767ZITx U1
-U 1 1 618DD601
-P 9150 5000
-F 0 "U1" H 9150 1200 50  0001 C CNN
-F 1 "STM32F767ZITx" H 9200 4500 50  0000 C CNN
-F 2 "DriverBoard:STM32" H 8150 1600 50  0001 R CNN
-F 3 "" H 9150 5000 50  0001 C CNN
-	1    9150 5000
-	1    0    0    -1  
-$EndComp
-Text GLabel 7950 5900 0    50   Input ~ 0
+Text GLabel 7950 7300 0    50   Input ~ 0
 Steer3-PWMA
-Text GLabel 7950 6000 0    50   Input ~ 0
+Text GLabel 7950 7400 0    50   Input ~ 0
 Steer3-PWMB
 $Comp
 L power:+5V #PWR0115
@@ -2072,7 +2016,7 @@ Wire Wire Line
 	3850 7500 4000 7500
 Wire Notes Line
 	4600 10300 1100 10300
-Text GLabel 7950 4500 0    50   Input ~ 0
+Text GLabel 7950 3400 0    50   Input ~ 0
 I2C-2-INT
 Text GLabel 10350 7700 2    50   Input ~ 0
 I2C-2-EXTRA
@@ -2085,7 +2029,6 @@ NoConn ~ 9150 8600
 NoConn ~ 9050 8600
 NoConn ~ 8950 8600
 NoConn ~ 8850 8600
-NoConn ~ 8750 8600
 NoConn ~ 9850 1400
 NoConn ~ 9750 1400
 NoConn ~ 9650 1400
@@ -2100,4 +2043,241 @@ NoConn ~ 8650 1400
 NoConn ~ 8750 1400
 NoConn ~ 8850 1400
 NoConn ~ 8950 1400
+Text GLabel 10350 5800 2    50   Input ~ 0
+Drive1-INB2
+Text GLabel 10350 4500 2    50   Input ~ 0
+Drive1-INB1
+Text GLabel 10350 4900 2    50   Input ~ 0
+Drive1-INA2
+Text GLabel 10350 4800 2    50   Input ~ 0
+Drive1-INA1
+Text GLabel 10350 4700 2    50   Input ~ 0
+Drive2-B2
+Text GLabel 7950 8100 0    50   Input ~ 0
+Drive2-B1
+Text GLabel 10350 5500 2    50   Input ~ 0
+Drive2-INA2
+Text GLabel 7950 5600 0    50   Input ~ 0
+Drive2-INA1
+Text GLabel 7950 7900 0    50   Input ~ 0
+Drive3-INB2
+Text GLabel 7950 5400 0    50   Input ~ 0
+Drive3-INB1
+Text GLabel 10350 3000 2    50   Input ~ 0
+Steer1-INB2
+Text GLabel 10350 3100 2    50   Input ~ 0
+Steer1-INB1
+Text GLabel 10350 3200 2    50   Input ~ 0
+Steer1-INA2
+Text GLabel 10350 6400 2    50   Input ~ 0
+Steer1-INA1
+Text GLabel 10350 7200 2    50   Input ~ 0
+Steer2-INB2
+Text GLabel 10350 7300 2    50   Input ~ 0
+Steer2-INB1
+Text GLabel 10350 7400 2    50   Input ~ 0
+Steer2-INA2
+Text GLabel 10350 7100 2    50   Input ~ 0
+Steer2-INA1
+Text GLabel 7950 7100 0    50   Input ~ 0
+Steer3-INB2
+Text GLabel 7950 7200 0    50   Input ~ 0
+Steer3-INB1
+Text GLabel 7950 6200 0    50   Input ~ 0
+Drive3-INA2
+Text GLabel 7950 6800 0    50   Input ~ 0
+Drive3-INA1
+Text GLabel 10350 5900 2    50   Input ~ 0
+Drive1-Enc-Bout
+Text GLabel 10350 5700 2    50   Input ~ 0
+Drive1-Enc-Aout
+Text GLabel 10350 7600 2    50   Input ~ 0
+Drive2-Enc-Bout
+Text GLabel 10350 2900 2    50   Input ~ 0
+Drive2-Enc-Aout
+Text GLabel 10350 3500 2    50   Input ~ 0
+Drive3-Enc-Bout
+Text GLabel 10350 4400 2    50   Input ~ 0
+Drive3-Enc-Aout
+Text GLabel 10350 6100 2    50   Input ~ 0
+Steer1-Enc-Bout
+Text GLabel 7950 5700 0    50   Input ~ 0
+Steer2-Enc-Bout
+Text GLabel 7950 5800 0    50   Input ~ 0
+Steer2-Enc-Aout
+Text GLabel 10350 1700 2    50   Input ~ 0
+Steer3-Enc-Bout
+Text GLabel 10350 2100 2    50   Input ~ 0
+Steer3-Enc-Aout
+Text GLabel 7950 6900 0    50   Input ~ 0
+Steer3-INA2
+Text GLabel 7950 4900 0    50   Input ~ 0
+Steer3-INA1
+Text GLabel 7950 3200 0    50   Input ~ 0
+Steer4-Enc-Bout
+Text GLabel 10350 3400 2    50   Input ~ 0
+Steer4-Enc-Aout
+Text GLabel 7950 3700 0    50   Input ~ 0
+Steer5-Enc-Bout
+Text GLabel 7950 7000 0    50   Input ~ 0
+Steer5-Enc-Aout
+Text GLabel 10350 2400 2    50   Input ~ 0
+Steer6-Enc-Bout
+Text GLabel 7950 4600 0    50   Input ~ 0
+Steer6-Enc-Aout
+Text GLabel 10350 6300 2    50   Input ~ 0
+SabreTX
+Text GLabel 10350 6200 2    50   Input ~ 0
+Steer1-Enc-Aout
+Text GLabel 7950 4200 0    50   Input ~ 0
+Drive6-Enc-Bout
+Text GLabel 10350 7800 2    50   Input ~ 0
+Drive6-Enc-Aout
+Text GLabel 7950 8300 0    50   Input ~ 0
+Drive5-Enc-Aout
+Text GLabel 7950 6100 0    50   Input ~ 0
+Drive5-Enc-Bout
+Text GLabel 7950 4800 0    50   Input ~ 0
+Drive4-Enc-Bout
+Text GLabel 10350 1900 2    50   Input ~ 0
+Drive4-Enc-Aout
+Text GLabel 14650 7600 2    50   Input ~ 0
+VCCIO
+Text GLabel 13750 8500 0    50   Input ~ 0
+VCCIO
+$Comp
+L Device:C C7
+U 1 1 6210D0CC
+P 13800 7750
+F 0 "C7" H 14000 7650 50  0000 L CNN
+F 1 "0.1µF" H 13950 7750 50  0000 L CNN
+F 2 "DriverBoard:0603Footprint" H 13838 7600 50  0001 C CNN
+F 3 "~" H 13800 7750 50  0001 C CNN
+	1    13800 7750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 6211D8A0
+P 13800 7900
+F 0 "#PWR0160" H 13800 7650 50  0001 C CNN
+F 1 "GND" H 13800 7750 50  0000 C CNN
+F 2 "" H 13800 7900 50  0001 C CNN
+F 3 "" H 13800 7900 50  0001 C CNN
+	1    13800 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 7600 14150 7600
+Wire Wire Line
+	14150 7450 14150 7600
+Wire Wire Line
+	14150 8150 14350 8150
+Connection ~ 14150 7600
+Wire Wire Line
+	14150 7600 14150 8150
+$Comp
+L Device:C C8
+U 1 1 621511B9
+P 14700 7850
+F 0 "C8" H 14700 7750 50  0000 L CNN
+F 1 "0.1µF" H 14600 7550 50  0000 L CNN
+F 2 "DriverBoard:0603Footprint" H 14738 7700 50  0001 C CNN
+F 3 "~" H 14700 7850 50  0001 C CNN
+	1    14700 7850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14550 7600 14650 7600
+Wire Wire Line
+	14550 7600 14550 7850
+Connection ~ 14550 7850
+Wire Wire Line
+	14550 7850 14550 8200
+$Comp
+L power:GND #PWR0161
+U 1 1 621872D0
+P 14850 7850
+F 0 "#PWR0161" H 14850 7600 50  0001 C CNN
+F 1 "GND" H 14850 7700 50  0000 C CNN
+F 2 "" H 14850 7850 50  0001 C CNN
+F 3 "" H 14850 7850 50  0001 C CNN
+	1    14850 7850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 2700 2    50   Input ~ 0
+SPI_1_CS
+Text GLabel 1350 2500 2    50   Input ~ 0
+SPI_1_MOSI
+Text GLabel 1350 2400 2    50   Input ~ 0
+SPI_1_SCK
+Text GLabel 1350 2300 2    50   Input ~ 0
+SPI_1_INT
+Text GLabel 1350 2600 2    50   Input ~ 0
+SPI_1_MISO
+Text GLabel 7950 4400 0    50   Input ~ 0
+SPI_1_CS
+Text GLabel 7950 4500 0    50   Input ~ 0
+SPI_1_SCK
+Text GLabel 7950 4300 0    50   Input ~ 0
+SPI_1_MISO
+Text GLabel 10350 7500 2    50   Input ~ 0
+SPI_1_MOSI
+Text GLabel 7950 4700 0    50   Input ~ 0
+SPI_1_INT
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 61EFE005
+P 14500 5600
+F 0 "#PWR0101" H 14500 5450 50  0001 C CNN
+F 1 "+3V3" H 14515 5773 50  0000 C CNN
+F 2 "" H 14500 5600 50  0001 C CNN
+F 3 "" H 14500 5600 50  0001 C CNN
+	1    14500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 61EFE7D0
+P 14450 3900
+F 0 "#PWR0106" H 14450 3750 50  0001 C CNN
+F 1 "+3V3" H 14465 4073 50  0000 C CNN
+F 2 "" H 14450 3900 50  0001 C CNN
+F 3 "" H 14450 3900 50  0001 C CNN
+	1    14450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 61EFF1FB
+P 14400 2200
+F 0 "#PWR0113" H 14400 2050 50  0001 C CNN
+F 1 "+3V3" H 14415 2373 50  0000 C CNN
+F 2 "" H 14400 2200 50  0001 C CNN
+F 3 "" H 14400 2200 50  0001 C CNN
+	1    14400 2200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	16050 7300 16050 9950
+Wire Notes Line style solid
+	11750 7300 11750 9950
+Wire Notes Line style solid
+	11750 7300 16050 7300
+$Comp
+L MCU_ST_STM32F7:STM32F767ZITx U1
+U 1 1 618DD601
+P 9150 5000
+F 0 "U1" H 9150 1200 50  0001 C CNN
+F 1 "STM32F767ZITx" H 9200 4500 50  0000 C CNN
+F 2 "DriverBoard:STM32" H 8150 1600 50  0001 R CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 3000
+Text Notes 10400 4250 0    50   ~ 0
+PWM Pins\n
+Text Notes 10400 2850 0    50   ~ 0
+PWM Pins\n
 $EndSCHEMATC
