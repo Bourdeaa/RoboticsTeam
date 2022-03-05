@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name DriverBoardSymbols)(type Legacy)(uri ${KIPRJMOD}/DriverBoard/Symbols&Footprints/Symbol/JST4Way.lib)(options "")(descr ""))
-)
