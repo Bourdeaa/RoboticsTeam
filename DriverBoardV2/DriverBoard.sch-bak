@@ -37,54 +37,52 @@ Hall Sensor GND
 Text Notes 1100 4150 0    50   ~ 0
 Hall Sensor VCC
 Wire Notes Line style solid
-	550  700  2050 700 
-Text Notes 600  800  0    50   ~ 0
+	500  700  2400 700 
+Text Notes 550  800  0    50   ~ 0
 I2C Connector
-Text Notes 550  1950 0    50   ~ 0
+Text Notes 14250 8650 0    50   ~ 0
 SPI Connector
-Text Notes 1350 1100 0    50   ~ 0
+Text Notes 1300 1100 0    50   ~ 0
 VCC
 Wire Wire Line
-	1350 1100 1800 1100
+	1300 1100 2300 1100
 $Comp
 L power:+5V #PWR0110
 U 1 1 619E001F
-P 1800 1050
-F 0 "#PWR0110" H 1800 900 50  0001 C CNN
-F 1 "+5V" H 1815 1223 50  0000 C CNN
-F 2 "" H 1800 1050 50  0001 C CNN
-F 3 "" H 1800 1050 50  0001 C CNN
-	1    1800 1050
+P 2300 1050
+F 0 "#PWR0110" H 2300 900 50  0001 C CNN
+F 1 "+5V" H 2315 1223 50  0000 C CNN
+F 2 "" H 2300 1050 50  0001 C CNN
+F 3 "" H 2300 1050 50  0001 C CNN
+	1    2300 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 619E1153
-P 1950 1350
-F 0 "#PWR0111" H 1950 1100 50  0001 C CNN
-F 1 "GND" H 1955 1177 50  0000 C CNN
-F 2 "" H 1950 1350 50  0001 C CNN
-F 3 "" H 1950 1350 50  0001 C CNN
-	1    1950 1350
+P 2300 1350
+F 0 "#PWR0111" H 2300 1100 50  0001 C CNN
+F 1 "GND" H 2305 1177 50  0000 C CNN
+F 2 "" H 2300 1350 50  0001 C CNN
+F 3 "" H 2300 1350 50  0001 C CNN
+	1    2300 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1200 1950 1200
-Wire Wire Line
-	1950 1200 1950 1350
+	2300 1200 2300 1350
 Wire Notes Line style solid
-	2050 1750 550  1750
+	2400 1750 500  1750
 Wire Wire Line
-	1800 1100 1800 1050
+	2300 1100 2300 1050
 $Comp
 L power:GND #PWR0116
 U 1 1 61A18ECE
-P 1950 2800
-F 0 "#PWR0116" H 1950 2550 50  0001 C CNN
-F 1 "GND" H 1950 2850 50  0000 C CNN
-F 2 "" H 1950 2800 50  0001 C CNN
-F 3 "" H 1950 2800 50  0001 C CNN
-	1    1950 2800
+P 15650 9500
+F 0 "#PWR0116" H 15650 9250 50  0001 C CNN
+F 1 "GND" H 15650 9550 50  0000 C CNN
+F 2 "" H 15650 9500 50  0001 C CNN
+F 3 "" H 15650 9500 50  0001 C CNN
+	1    15650 9500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -201,18 +199,18 @@ F 3 "" H 9100 9650 50  0001 C CNN
 	1    9100 9650
 	1    0    0    -1  
 $EndComp
-Text Notes 2150 2750 0    50   ~ 0
+Text Notes 15850 9450 0    50   ~ 0
 CS
-Text Notes 2050 2550 0    50   ~ 0
+Text Notes 15750 9250 0    50   ~ 0
 MOSI
-Text Notes 2100 2850 0    50   ~ 0
+Text Notes 15800 9550 0    50   ~ 0
 GND
-Text Notes 2100 2950 0    50   ~ 0
+Text Notes 15800 9650 0    50   ~ 0
 VCC
-Text Notes 2050 2650 0    50   ~ 0
+Text Notes 15750 9350 0    50   ~ 0
 MISO
 Wire Wire Line
-	1350 2800 1950 2800
+	15050 9500 15650 9500
 Text Notes 6300 2000 0    50   ~ 0
 Timer1 Channel 1
 Wire Wire Line
@@ -370,10 +368,8 @@ F 3 "" H 4000 6550 50  0001 C CNN
 	1    4000 6550
 	1    0    0    1   
 $EndComp
-Text Notes 2650 2000 0    50   ~ 0
+Text Notes 550  1950 0    50   ~ 0
 IMU
-Wire Notes Line style solid
-	4550 1850 4550 3100
 Text GLabel 5650 1750 2    50   Input ~ 0
 Drive1-INA1
 Text GLabel 5650 1850 2    50   Input ~ 0
@@ -532,25 +528,25 @@ Text Notes 6300 3750 0    50   ~ 0
 Timer 1 Channel 4\n\n\n\n
 Text Notes 6300 4500 0    50   ~ 0
 Timer 2 Channel 1\n\n\n
-Text GLabel 1350 1300 2    50   Input ~ 0
+Text GLabel 1300 1300 2    50   Input ~ 0
 I2C-2-SDA
 Text GLabel 7950 5100 0    50   Input ~ 0
 I2C-2-SDA
-Text GLabel 1350 1400 2    50   Input ~ 0
+Text GLabel 1300 1400 2    50   Input ~ 0
 I2C-2-SCL
 Text GLabel 7950 5200 0    50   Input ~ 0
 I2C-2-SCL
-Text GLabel 3200 2550 0    50   Input ~ 0
+Text GLabel 1100 2500 0    50   Input ~ 0
 I2C-4-SCL
-Text GLabel 3200 2450 0    50   Input ~ 0
+Text GLabel 1100 2400 0    50   Input ~ 0
 I2C-4-SDA
 Text GLabel 7950 6500 0    50   Input ~ 0
 I2C-4-SCL
 Text GLabel 7950 6600 0    50   Input ~ 0
 I2C-4-SDA
-Text GLabel 1350 1500 2    50   Input ~ 0
+Text GLabel 1300 1500 2    50   Input ~ 0
 I2C-2-INT
-Text GLabel 3200 2650 0    50   Input ~ 0
+Text GLabel 1100 2600 0    50   Input ~ 0
 I2C-4-INT1
 Text GLabel 7950 7600 0    50   Input ~ 0
 UART-7-TXD
@@ -562,7 +558,7 @@ Text GLabel 7950 7800 0    50   Input ~ 0
 UART-7-CTS
 Wire Notes Line style solid
 	10200 9000 10200 9950
-Text GLabel 7950 6400 0    50   Input ~ 0
+Text GLabel 7950 6800 0    50   Input ~ 0
 I2C-4-INT0
 Text GLabel 10350 2500 2    50   Input ~ 0
 Drive1-PWMA
@@ -580,7 +576,7 @@ Text GLabel 10350 2200 2    50   Input ~ 0
 Steer1-PWMA
 Text GLabel 5650 6100 2    50   Input ~ 0
 Steer1-PWMB
-Text GLabel 10350 1800 2    50   Input ~ 0
+Text GLabel 10350 4100 2    50   Input ~ 0
 Steer1-PWMB
 Text GLabel 7950 5900 0    50   Input ~ 0
 Steer2-PWMA
@@ -606,55 +602,55 @@ Text GLabel 3850 5150 2    50   Input ~ 0
 Steer2-Enc-Aout
 Text GLabel 3850 6300 2    50   Input ~ 0
 Steer3-Enc-Aout
-Text GLabel 3200 2750 0    50   Input ~ 0
+Text GLabel 1100 2700 0    50   Input ~ 0
 I2C-4-INT0
 $Comp
 L power:+3V3 #PWR0145
 U 1 1 61B721FF
-P 2850 2100
-F 0 "#PWR0145" H 2850 1950 50  0001 C CNN
-F 1 "+3V3" H 2865 2273 50  0000 C CNN
-F 2 "" H 2850 2100 50  0001 C CNN
-F 3 "" H 2850 2100 50  0001 C CNN
-	1    2850 2100
+P 750 2050
+F 0 "#PWR0145" H 750 1900 50  0001 C CNN
+F 1 "+3V3" H 765 2223 50  0000 C CNN
+F 2 "" H 750 2050 50  0001 C CNN
+F 3 "" H 750 2050 50  0001 C CNN
+	1    750  2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0146
 U 1 1 61B72EFA
-P 2700 2300
-F 0 "#PWR0146" H 2700 2050 50  0001 C CNN
-F 1 "GND" H 2705 2127 50  0000 C CNN
-F 2 "" H 2700 2300 50  0001 C CNN
-F 3 "" H 2700 2300 50  0001 C CNN
-	1    2700 2300
+P 600 2250
+F 0 "#PWR0146" H 600 2000 50  0001 C CNN
+F 1 "GND" H 605 2077 50  0000 C CNN
+F 2 "" H 600 2250 50  0001 C CNN
+F 3 "" H 600 2250 50  0001 C CNN
+	1    600  2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L DriverBoardSymbols:JST_XH_6POS J7
 U 1 1 61B76748
-P 3200 2250
-F 0 "J7" H 3500 2500 60  0000 L CNN
-F 1 "B6B-XH-ALFSN" H 3150 2400 60  0000 L CNN
-F 2 "DriverBoard:JST6Way" H 3600 1990 60  0001 C CNN
-F 3 "" H 3200 2250 60  0000 C CNN
-	1    3200 2250
+P 1100 2200
+F 0 "J7" H 1400 2450 60  0000 L CNN
+F 1 "B6B-XH-ALFSN" H 1050 2350 60  0000 L CNN
+F 2 "DriverBoard:JST6Way" H 1500 1940 60  0001 C CNN
+F 3 "" H 1100 2200 60  0000 C CNN
+	1    1100 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 2250 2850 2250
+	1100 2200 750  2200
 Wire Wire Line
-	2850 2250 2850 2100
+	750  2200 750  2050
 Wire Notes Line style solid
-	2600 1850 4550 1850
+	500  1800 2450 1800
 Wire Notes Line style solid
-	2600 3100 4550 3100
+	500  3050 2450 3050
 Wire Wire Line
-	3200 2350 2950 2350
+	1100 2300 850  2300
 Wire Wire Line
-	2950 2350 2950 2300
+	850  2300 850  2250
 Wire Wire Line
-	2950 2300 2700 2300
+	850  2250 600  2250
 Text GLabel 7950 6300 0    50   Input ~ 0
 I2C-4-INT1
 Text GLabel 2100 3800 2    50   Input ~ 0
@@ -867,41 +863,41 @@ LED2
 $Comp
 L DriverBoardSymbols:JST_XH_6POS J14
 U 1 1 61BFA86C
-P 1350 1600
-F 0 "J14" H 1550 850 60  0000 L CNN
-F 1 "B6B-XH-ALFSN" H 1300 950 60  0000 L CNN
-F 2 "DriverBoard:JST6Way" H 1750 1340 60  0001 C CNN
-F 3 "" H 1350 1600 60  0000 C CNN
-	1    1350 1600
+P 1300 1600
+F 0 "J14" H 1500 850 60  0000 L CNN
+F 1 "B6B-XH-ALFSN" H 1250 950 60  0000 L CNN
+F 2 "DriverBoard:JST6Way" H 1700 1340 60  0001 C CNN
+F 3 "" H 1300 1600 60  0000 C CNN
+	1    1300 1600
 	-1   0    0    1   
 $EndComp
-Text GLabel 1350 1600 2    50   Input ~ 0
+Text GLabel 1300 1600 2    50   Input ~ 0
 I2C-2-EXTRA
 Text GLabel 7950 5300 0    50   Input ~ 0
 I2C-2-EXTRA
-Text Notes 2100 2450 0    50   ~ 0
+Text Notes 15800 9150 0    50   ~ 0
 SCK\n
-Text Notes 2100 2350 0    50   ~ 0
+Text Notes 15800 9050 0    50   ~ 0
 INT
 $Comp
 L DriverBoardSymbols:JST_XH_8POS J15
 U 1 1 61C0D326
-P 1350 3000
-F 0 "J15" H 1592 2013 60  0000 C CNN
-F 1 "B8B-XH-ALFSN" H 1592 2119 60  0000 C CNN
-F 2 "DriverBoard:JST8Way" H 1750 2740 60  0001 C CNN
-F 3 "" H 1350 3000 60  0000 C CNN
-	1    1350 3000
+P 15050 9700
+F 0 "J15" H 15292 8713 60  0000 C CNN
+F 1 "B8B-XH-ALFSN" H 15292 8819 60  0000 C CNN
+F 2 "DriverBoard:JST8Way" H 15450 9440 60  0001 C CNN
+F 3 "" H 15050 9700 60  0000 C CNN
+	1    15050 9700
 	-1   0    0    1   
 $EndComp
 Wire Notes Line style solid
-	2350 3150 500  3150
-Text Notes 2100 3050 0    50   ~ 0
+	16050 9850 14200 9850
+Text Notes 15800 9750 0    50   ~ 0
 Extra
 Wire Notes Line style solid
-	500  1850 2350 1850
+	14200 8550 16050 8550
 Wire Notes Line style solid
-	500  1850 500  3150
+	14200 8550 14200 9850
 $Comp
 L DriverBoardSymbols:MCP2562 U3
 U 1 1 61BEBFCA
@@ -1424,9 +1420,9 @@ Secondary
 Text Notes 13100 5850 0    50   ~ 0
 Tertiary
 Wire Notes Line style solid
-	2050 700  2050 1750
+	2400 700  2400 1750
 Wire Notes Line style solid
-	550  700  550  1750
+	500  700  500  1750
 Text GLabel 10350 7900 2    50   Input ~ 0
 ROSReset
 Text GLabel 5750 10050 2    50   Input ~ 0
@@ -1440,20 +1436,20 @@ Steer3-PWMB
 $Comp
 L power:+5V #PWR0115
 U 1 1 61A15ADB
-P 1750 3050
-F 0 "#PWR0115" H 1750 2900 50  0001 C CNN
-F 1 "+5V" H 1700 3200 50  0000 C CNN
-F 2 "" H 1750 3050 50  0001 C CNN
-F 3 "" H 1750 3050 50  0001 C CNN
-	1    1750 3050
+P 15450 9750
+F 0 "#PWR0115" H 15450 9600 50  0001 C CNN
+F 1 "+5V" H 15400 9900 50  0000 C CNN
+F 2 "" H 15450 9750 50  0001 C CNN
+F 3 "" H 15450 9750 50  0001 C CNN
+	1    15450 9750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 2900 1600 2900
+	15050 9600 15300 9600
 Wire Wire Line
-	1600 2900 1600 3050
+	15300 9600 15300 9750
 Wire Wire Line
-	1600 3050 1750 3050
+	15300 9750 15450 9750
 Text GLabel 2100 3900 2    50   Input ~ 0
 Drive1-Enc-Aout
 Text GLabel 3850 3800 2    50   Input ~ 0
@@ -1461,7 +1457,7 @@ Steer1-Enc-Bout
 Text Notes 2900 3350 0    50   ~ 0
 Steering Motor Encoders\n
 Wire Notes Line style solid
-	2350 1850 2350 3150
+	16050 8550 16050 9850
 Text Notes 1100 7250 0    50   ~ 0
 Hall Sensor B Vout
 Text Notes 1100 7350 0    50   ~ 0
@@ -1631,7 +1627,7 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	2800 3250 2850 10300
 Wire Notes Line style solid
-	2600 3100 2600 1850
+	500  3050 500  1800
 Wire Notes Line style solid
 	4650 3250 4600 10300
 Text GLabel 3850 7200 2    50   Input ~ 0
@@ -1842,9 +1838,9 @@ Text GLabel 7950 7100 0    50   Input ~ 0
 Steer3-INB2
 Text GLabel 7950 7200 0    50   Input ~ 0
 Steer3-INB1
-Text GLabel 7950 6200 0    50   Input ~ 0
+Text GLabel 7950 6400 0    50   Input ~ 0
 Drive3-INA2
-Text GLabel 7950 6800 0    50   Input ~ 0
+Text GLabel 7950 6200 0    50   Input ~ 0
 Drive3-INA1
 Text GLabel 10350 5900 2    50   Input ~ 0
 Drive1-Enc-Bout
@@ -1900,15 +1896,15 @@ Text GLabel 7950 4800 0    50   Input ~ 0
 Drive4-Enc-Bout
 Text GLabel 10350 1900 2    50   Input ~ 0
 Drive4-Enc-Aout
-Text GLabel 1350 2700 2    50   Input ~ 0
+Text GLabel 15050 9400 2    50   Input ~ 0
 SPI_1_CS
-Text GLabel 1350 2500 2    50   Input ~ 0
+Text GLabel 15050 9200 2    50   Input ~ 0
 SPI_1_MOSI
-Text GLabel 1350 2400 2    50   Input ~ 0
+Text GLabel 15050 9100 2    50   Input ~ 0
 SPI_1_SCK
-Text GLabel 1350 2300 2    50   Input ~ 0
+Text GLabel 15050 9000 2    50   Input ~ 0
 SPI_1_INT
-Text GLabel 1350 2600 2    50   Input ~ 0
+Text GLabel 15050 9300 2    50   Input ~ 0
 SPI_1_MISO
 Text GLabel 7950 4400 0    50   Input ~ 0
 SPI_1_CS
@@ -1953,7 +1949,7 @@ F 3 "" H 14400 2200 50  0001 C CNN
 	1    14400 2200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1350 3000
+NoConn ~ 15050 9700
 NoConn ~ 9850 8500
 NoConn ~ 9700 8500
 NoConn ~ 9550 8500
@@ -2145,7 +2141,6 @@ Text GLabel 10350 4200 2    50   Input ~ 0
 TurretPWM1
 Text GLabel 10350 4300 2    50   Input ~ 0
 TurretPWM2
-NoConn ~ 8050 2150
 $Comp
 L DriverBoardSymbols:R R1
 U 1 1 61BE9D22
@@ -2263,4 +2258,114 @@ Wire Wire Line
 	12450 6350 12450 6450
 Wire Wire Line
 	12550 6350 12450 6350
+Wire Wire Line
+	2300 1200 1300 1200
+Text GLabel 3050 2000 0    50   Input ~ 0
+I2C-2-SDA
+Text GLabel 3050 2300 0    50   Input ~ 0
+I2C-2-SCL
+$Comp
+L DriverBoardSymbols:R R6
+U 1 1 623E4991
+P 3050 1500
+F 0 "R6" V 3247 1579 60  0000 L CNN
+F 1 "1k" V 3353 1579 60  0000 L CNN
+F 2 "STA_CF14_STP" H 3300 1165 60  0001 C CNN
+F 3 "" H 3050 1500 60  0000 C CNN
+	1    3050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L DriverBoardSymbols:R R7
+U 1 1 623E5C84
+P 3500 1500
+F 0 "R7" V 3697 1579 60  0000 L CNN
+F 1 "1k" V 3803 1579 60  0000 L CNN
+F 2 "STA_CF14_STP" H 3750 1165 60  0001 C CNN
+F 3 "" H 3500 1500 60  0000 C CNN
+	1    3500 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2300 3500 2300
+Wire Wire Line
+	3500 2000 3500 2300
+$Comp
+L power:+5V #PWR?
+U 1 1 62418119
+P 3250 1400
+F 0 "#PWR?" H 3250 1250 50  0001 C CNN
+F 1 "+5V" H 3265 1573 50  0000 C CNN
+F 2 "" H 3250 1400 50  0001 C CNN
+F 3 "" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1400 3250 1500
+Wire Wire Line
+	3250 1500 3500 1500
+Wire Wire Line
+	3250 1500 3050 1500
+Connection ~ 3250 1500
+Text GLabel 4050 2000 0    50   Input ~ 0
+I2C-4-SDA
+Text GLabel 4050 2300 0    50   Input ~ 0
+I2C-4-SCL
+$Comp
+L DriverBoardSymbols:R R8
+U 1 1 624330C9
+P 4050 1500
+F 0 "R8" V 4247 1579 60  0000 L CNN
+F 1 "1k" V 4353 1579 60  0000 L CNN
+F 2 "STA_CF14_STP" H 4300 1165 60  0001 C CNN
+F 3 "" H 4050 1500 60  0000 C CNN
+	1    4050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L DriverBoardSymbols:R R9
+U 1 1 62433D8D
+P 4450 1500
+F 0 "R9" V 4647 1579 60  0000 L CNN
+F 1 "1k" V 4753 1579 60  0000 L CNN
+F 2 "STA_CF14_STP" H 4700 1165 60  0001 C CNN
+F 3 "" H 4450 1500 60  0000 C CNN
+	1    4450 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2300 4450 2300
+Wire Wire Line
+	4450 2300 4450 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 6243CF6D
+P 4250 1400
+F 0 "#PWR?" H 4250 1250 50  0001 C CNN
+F 1 "+5V" H 4265 1573 50  0000 C CNN
+F 2 "" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1400 4250 1500
+Wire Wire Line
+	4250 1500 4450 1500
+Wire Wire Line
+	4250 1500 4050 1500
+Connection ~ 4250 1500
+Wire Notes Line style solid
+	4700 2500 2500 2500
+Text Notes 2550 1250 0    50   ~ 0
+I2C Pullups\n
+Wire Notes Line style solid
+	4700 2500 4700 1100
+Wire Notes Line style solid
+	2500 1100 4700 1100
+Wire Notes Line style solid
+	2450 1800 2450 3050
+Wire Notes Line style solid
+	2500 2500 2500 1100
 $EndSCHEMATC

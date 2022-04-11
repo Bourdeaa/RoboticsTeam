@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name DriverBoard)(type KiCad)(uri ${KIPRJMOD}/Symbols&Footprints/Footprint)(options "")(descr ""))
+  (lib (name MCP2562)(type KiCad)(uri ${KIPRJMOD}/Symbols&Footprints/Footprint)(options "")(descr ""))
 )
