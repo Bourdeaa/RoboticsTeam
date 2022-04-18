@@ -1,208 +1,89 @@
-49488402828338
-DriverBoard
+21391094587705
+Footprint
 2PinHeader
 Through hole straight pin header, 1x02, 2.54mm pitch, single row
 Through hole pin header THT 1x02 2.54mm single row
 0
 2
 2
-DriverBoard
-0603Footprint
-
-
+Footprint
+C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-DriverBoard
-1812Footprint
-
-
+Footprint
+D_0805_2012Metric
+Diode SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+diode
 0
 2
 2
-DriverBoard
-Footprint_0603
-
-
-0
-2
-2
-DriverBoard
+Footprint
 JST2Way
 
 
 0
 2
 2
-DriverBoard
+Footprint
 JST3Way
 JST XH series connector, B3B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
 connector JST XH vertical boss
 0
 3
 3
-DriverBoard
+Footprint
 JST4Way
 JST XH series connector, B4B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
 connector JST XH vertical boss
 0
 4
 4
-DriverBoard
+Footprint
 JST6Way
 JST XH series connector, B6B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
 connector JST XH vertical
 0
 6
 6
-DriverBoard
+Footprint
 JST8Way
 JST XH series connector, B8B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
 connector JST XH vertical boss
 0
 8
 8
-DriverBoard
-LEDResistor
-
-
-0
-2
-2
-DriverBoard
-LED_1812
-
-
-0
-5
-5
-DriverBoard
+Footprint
 M3Drill
 
 
 0
 0
 0
-DriverBoard
+Footprint
 MCP2562
 
 
 0
 8
 8
-DriverBoard
-MicroBVert
-
-
-0
-7
-7
-DriverBoard
-STM32
-
-
-0
-244
-127
-MCP2562
-2PinHeader
-Through hole straight pin header, 1x02, 2.54mm pitch, single row
-Through hole pin header THT 1x02 2.54mm single row
+Footprint
+R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
 0
 2
 2
-MCP2562
-0603Footprint
-
-
+Footprint
+R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
 0
 2
 2
-MCP2562
-1812Footprint
-
-
-0
-2
-2
-MCP2562
-Footprint_0603
-
-
-0
-2
-2
-MCP2562
-JST2Way
-
-
-0
-2
-2
-MCP2562
-JST3Way
-JST XH series connector, B3B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
-connector JST XH vertical boss
-0
-3
-3
-MCP2562
-JST4Way
-JST XH series connector, B4B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
-connector JST XH vertical boss
-0
-4
-4
-MCP2562
-JST6Way
-JST XH series connector, B6B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
-connector JST XH vertical
-0
-6
-6
-MCP2562
-JST8Way
-JST XH series connector, B8B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
-connector JST XH vertical boss
-0
-8
-8
-MCP2562
-LEDResistor
-
-
-0
-2
-2
-MCP2562
-LED_1812
-
-
-0
-5
-5
-MCP2562
-M3Drill
-
-
-0
-0
-0
-MCP2562
-MCP2562
-
-
-0
-8
-8
-MCP2562
-MicroBVert
-
-
-0
-7
-7
-MCP2562
+Footprint
 STM32
 
 
