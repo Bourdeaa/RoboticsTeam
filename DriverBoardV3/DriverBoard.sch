@@ -1,16 +1,2092 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr User 16142 9843
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "DriverBoard"
+Date "2022-04-24"
+Rev "3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 705  3680 0    50   ~ 10
+Driver Motor Encoders\n
+Text Notes 655  4180 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  4280 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  4380 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  4480 0    50   ~ 0
+Hall Sensor VCC
+Wire Notes Line style solid
+	780  735  2680 735 
+Text Notes 830  835  0    50   ~ 10
+I2C Connector
+Text Notes 14250 8650 0    50   ~ 10
+SPI Connector
+$Comp
+L power:+5V #PWR0110
+U 1 1 619E001F
+P 2205 1235
+F 0 "#PWR0110" H 2205 1085 50  0001 C CNN
+F 1 "+5V" H 2205 1190 50  0000 C CNN
+F 2 "" H 2205 1235 50  0001 C CNN
+F 3 "" H 2205 1235 50  0001 C CNN
+	1    2205 1235
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 619E1153
+P 2145 1385
+F 0 "#PWR0111" H 2145 1135 50  0001 C CNN
+F 1 "GND" H 2150 1212 50  0000 C CNN
+F 2 "" H 2145 1385 50  0001 C CNN
+F 3 "" H 2145 1385 50  0001 C CNN
+	1    2145 1385
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2145 1235 2145 1385
+Wire Notes Line style solid
+	2680 1785 780  1785
+$Comp
+L power:GND #PWR0116
+U 1 1 61A18ECE
+P 15650 9500
+F 0 "#PWR0116" H 15650 9250 50  0001 C CNN
+F 1 "GND" H 15650 9550 50  0000 C CNN
+F 2 "" H 15650 9500 50  0001 C CNN
+F 3 "" H 15650 9500 50  0001 C CNN
+	1    15650 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:LED D1
+U 1 1 61A43B4D
+P 8905 9725
+F 0 "D1" H 8898 9942 50  0000 C CNN
+F 1 "LED" H 8898 9851 50  0000 C CNN
+F 2 "DriverBoard:LY R976-PS-36" H 8905 9725 50  0001 C CNN
+F 3 "~" H 8905 9725 50  0001 C CNN
+	1    8905 9725
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:LED D2
+U 1 1 61A447F0
+P 10055 9725
+F 0 "D2" H 10048 9942 50  0000 C CNN
+F 1 "LED" H 10048 9851 50  0000 C CNN
+F 2 "DriverBoard:LY R976-PS-36" H 10055 9725 50  0001 C CNN
+F 3 "~" H 10055 9725 50  0001 C CNN
+	1    10055 9725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1655 4430 1755 4430
+Wire Wire Line
+	1655 4330 1905 4330
+Wire Wire Line
+	1905 4330 1905 4380
+$Comp
+L power:GND #PWR0119
+U 1 1 61A86B20
+P 1905 4380
+F 0 "#PWR0119" H 1905 4130 50  0001 C CNN
+F 1 "GND" H 1910 4207 50  0000 C CNN
+F 2 "" H 1905 4380 50  0001 C CNN
+F 3 "" H 1905 4380 50  0001 C CNN
+	1    1905 4380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9205 9725 9205 9925
+Wire Wire Line
+	8205 9725 8205 9925
+$Comp
+L power:GND #PWR0123
+U 1 1 61B22AC2
+P 8205 9925
+F 0 "#PWR0123" H 8205 9675 50  0001 C CNN
+F 1 "GND" H 8210 9752 50  0000 C CNN
+F 2 "" H 8205 9925 50  0001 C CNN
+F 3 "" H 8205 9925 50  0001 C CNN
+	1    8205 9925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 61B23B33
+P 9205 9925
+F 0 "#PWR0124" H 9205 9675 50  0001 C CNN
+F 1 "GND" H 9210 9752 50  0000 C CNN
+F 2 "" H 9205 9925 50  0001 C CNN
+F 3 "" H 9205 9925 50  0001 C CNN
+	1    9205 9925
+	1    0    0    -1  
+$EndComp
+Text Notes 15850 9450 0    50   ~ 0
+CS
+Text Notes 15750 9250 0    50   ~ 0
+MOSI
+Text Notes 15800 9550 0    50   ~ 0
+GND
+Text Notes 15800 9650 0    50   ~ 0
+VCC
+Text Notes 15750 9350 0    50   ~ 0
+MISO
+Wire Wire Line
+	15050 9500 15650 9500
+Wire Wire Line
+	1655 5630 1805 5630
+Wire Wire Line
+	1655 5530 1955 5530
+Wire Wire Line
+	1655 6830 1805 6830
+Wire Wire Line
+	1655 6730 1955 6730
+Wire Wire Line
+	3405 4430 3555 4430
+Wire Wire Line
+	3405 4330 3705 4330
+Wire Wire Line
+	3405 5680 3555 5680
+Wire Wire Line
+	3405 5580 3705 5580
+Wire Wire Line
+	3405 6830 3555 6830
+Wire Wire Line
+	3405 6730 3705 6730
+$Comp
+L power:GND #PWR0125
+U 1 1 61D34661
+P 3705 4330
+F 0 "#PWR0125" H 3705 4080 50  0001 C CNN
+F 1 "GND" H 3710 4157 50  0000 C CNN
+F 2 "" H 3705 4330 50  0001 C CNN
+F 3 "" H 3705 4330 50  0001 C CNN
+	1    3705 4330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 61D34C5B
+P 3705 5580
+F 0 "#PWR0126" H 3705 5330 50  0001 C CNN
+F 1 "GND" H 3710 5407 50  0000 C CNN
+F 2 "" H 3705 5580 50  0001 C CNN
+F 3 "" H 3705 5580 50  0001 C CNN
+	1    3705 5580
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 61D363F8
+P 3705 6730
+F 0 "#PWR0127" H 3705 6480 50  0001 C CNN
+F 1 "GND" H 3710 6557 50  0000 C CNN
+F 2 "" H 3705 6730 50  0001 C CNN
+F 3 "" H 3705 6730 50  0001 C CNN
+	1    3705 6730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 61D369F4
+P 1955 6730
+F 0 "#PWR0128" H 1955 6480 50  0001 C CNN
+F 1 "GND" H 1960 6557 50  0000 C CNN
+F 2 "" H 1955 6730 50  0001 C CNN
+F 3 "" H 1955 6730 50  0001 C CNN
+	1    1955 6730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 61D36F1C
+P 1955 5530
+F 0 "#PWR0129" H 1955 5280 50  0001 C CNN
+F 1 "GND" H 1960 5357 50  0000 C CNN
+F 2 "" H 1955 5530 50  0001 C CNN
+F 3 "" H 1955 5530 50  0001 C CNN
+	1    1955 5530
+	1    0    0    -1  
+$EndComp
+Text Notes 8180 9390 0    50   ~ 10
+Status LED's\n
+Wire Notes Line style solid
+	8105 10225 8105 9275
+$Comp
+L power:+5V #PWR0133
+U 1 1 61B30B0D
+P 1755 4430
+F 0 "#PWR0133" H 1755 4280 50  0001 C CNN
+F 1 "+5V" H 1755 4565 50  0000 C CNN
+F 2 "" H 1755 4430 50  0001 C CNN
+F 3 "" H 1755 4430 50  0001 C CNN
+	1    1755 4430
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0134
+U 1 1 61B52C10
+P 3555 4430
+F 0 "#PWR0134" H 3555 4280 50  0001 C CNN
+F 1 "+5V" H 3555 4560 50  0000 C CNN
+F 2 "" H 3555 4430 50  0001 C CNN
+F 3 "" H 3555 4430 50  0001 C CNN
+	1    3555 4430
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 61B53671
+P 3555 5680
+F 0 "#PWR0135" H 3555 5530 50  0001 C CNN
+F 1 "+5V" H 3555 5810 50  0000 C CNN
+F 2 "" H 3555 5680 50  0001 C CNN
+F 3 "" H 3555 5680 50  0001 C CNN
+	1    3555 5680
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 61B54C45
+P 1805 5630
+F 0 "#PWR0136" H 1805 5480 50  0001 C CNN
+F 1 "+5V" H 1805 5765 50  0000 C CNN
+F 2 "" H 1805 5630 50  0001 C CNN
+F 3 "" H 1805 5630 50  0001 C CNN
+	1    1805 5630
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 61B55285
+P 1805 6830
+F 0 "#PWR0137" H 1805 6680 50  0001 C CNN
+F 1 "+5V" H 1805 6965 50  0000 C CNN
+F 2 "" H 1805 6830 50  0001 C CNN
+F 3 "" H 1805 6830 50  0001 C CNN
+	1    1805 6830
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 61B559F4
+P 3555 6830
+F 0 "#PWR0138" H 3555 6680 50  0001 C CNN
+F 1 "+5V" H 3555 6960 50  0000 C CNN
+F 2 "" H 3555 6830 50  0001 C CNN
+F 3 "" H 3555 6830 50  0001 C CNN
+	1    3555 6830
+	-1   0    0    -1  
+$EndComp
+Text Notes 780  2190 0    50   ~ 10
+IMU
+NoConn ~ 5210 8060
+Wire Notes Line style solid
+	4360 6910 5860 6910
+Wire Notes Line style solid
+	5860 6910 5860 10610
+Wire Notes Line style solid
+	5860 10610 4360 10610
+Wire Notes Line style solid
+	4360 10610 4360 6910
+Text Notes 4410 7060 0    50   ~ 10
+MotorDrivers (Steering Motors)\n
+$Comp
+L power:GND #PWR0139
+U 1 1 61B01A45
+P 5510 8060
+F 0 "#PWR0139" H 5510 7810 50  0001 C CNN
+F 1 "GND" H 5515 7887 50  0000 C CNN
+F 2 "" H 5510 8060 50  0001 C CNN
+F 3 "" H 5510 8060 50  0001 C CNN
+	1    5510 8060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5210 7960 5510 7960
+Wire Wire Line
+	5510 7960 5510 8060
+Text GLabel 5210 7460 2    50   Input ~ 0
+Steer1-INA2
+Text GLabel 5210 7560 2    50   Input ~ 0
+Steer1-PWMA
+Text GLabel 5210 7660 2    50   Input ~ 0
+Steer1-INB1
+Text GLabel 5210 7760 2    50   Input ~ 0
+Steer1-INB2
+NoConn ~ 5210 9260
+$Comp
+L power:GND #PWR0140
+U 1 1 61B154EF
+P 5510 9260
+F 0 "#PWR0140" H 5510 9010 50  0001 C CNN
+F 1 "GND" H 5515 9087 50  0000 C CNN
+F 2 "" H 5510 9260 50  0001 C CNN
+F 3 "" H 5510 9260 50  0001 C CNN
+	1    5510 9260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5210 9160 5510 9160
+Wire Wire Line
+	5510 9160 5510 9260
+Text GLabel 5210 9610 2    50   Input ~ 0
+Steer2-INA1
+Text GLabel 5210 9710 2    50   Input ~ 0
+Steer2-INA2
+Text GLabel 5210 9810 2    50   Input ~ 0
+Steer2-PWMA
+Text GLabel 5210 9910 2    50   Input ~ 0
+Steer2-INB1
+Text GLabel 5210 10010 2    50   Input ~ 0
+Steer2-INB2
+Text GLabel 5210 10110 2    50   Input ~ 0
+Steer2-PWMB
+NoConn ~ 5210 10310
+$Comp
+L power:GND #PWR0141
+U 1 1 61B1BB48
+P 5510 10310
+F 0 "#PWR0141" H 5510 10060 50  0001 C CNN
+F 1 "GND" H 5515 10137 50  0000 C CNN
+F 2 "" H 5510 10310 50  0001 C CNN
+F 3 "" H 5510 10310 50  0001 C CNN
+	1    5510 10310
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5210 10210 5510 10210
+Wire Wire Line
+	5510 10210 5510 10310
+Text GLabel 5210 8560 2    50   Input ~ 0
+Steer3-INA1
+Text GLabel 5210 8660 2    50   Input ~ 0
+Steer3-INA2
+Text GLabel 5210 8760 2    50   Input ~ 0
+Steer3-PWMA
+Text GLabel 5210 8860 2    50   Input ~ 0
+Steer3-INB1
+Text GLabel 5210 8960 2    50   Input ~ 0
+Steer3-INB2
+Text GLabel 5210 9060 2    50   Input ~ 0
+Steer3-PWMB
+Text GLabel 1580 1335 2    50   Input ~ 0
+I2C-2-SDA
+Text GLabel 1580 1435 2    50   Input ~ 0
+I2C-2-SCL
+Text GLabel 1540 2810 2    50   Input ~ 0
+I2C-4-SCL
+Text GLabel 1540 2710 2    50   Input ~ 0
+I2C-4-SDA
+Text GLabel 1580 1535 2    50   Input ~ 0
+I2C-2-INT
+Text GLabel 1540 2910 2    50   Input ~ 0
+I2C-4-INT1
+Wire Notes Line style solid
+	10305 9275 10305 10225
+Text GLabel 5210 7860 2    50   Input ~ 0
+Steer1-PWMB
+Text GLabel 1655 5330 2    50   Input ~ 0
+Drive2-Enc-Bout
+Text GLabel 1655 5430 2    50   Input ~ 0
+Drive2-Enc-Aout
+Text GLabel 1655 6530 2    50   Input ~ 0
+Drive3-Enc-Bout
+Text GLabel 1655 6630 2    50   Input ~ 0
+Drive3-Enc-Aout
+Text GLabel 3405 4230 2    50   Input ~ 0
+Steer1-Enc-Aout
+Text GLabel 3405 5380 2    50   Input ~ 0
+Steer2-Enc-Bout
+Text GLabel 3405 5480 2    50   Input ~ 0
+Steer2-Enc-Aout
+Text GLabel 3405 6630 2    50   Input ~ 0
+Steer3-Enc-Aout
+Text GLabel 1540 3010 2    50   Input ~ 0
+I2C-4-INT0
+$Comp
+L power:+3V3 #PWR0145
+U 1 1 61B721FF
+P 1890 2450
+F 0 "#PWR0145" H 1890 2300 50  0001 C CNN
+F 1 "+3V3" H 1905 2623 50  0000 C CNN
+F 2 "" H 1890 2450 50  0001 C CNN
+F 3 "" H 1890 2450 50  0001 C CNN
+	1    1890 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 61B72EFA
+P 2165 2610
+F 0 "#PWR0146" H 2165 2360 50  0001 C CNN
+F 1 "GND" H 2170 2437 50  0000 C CNN
+F 2 "" H 2165 2610 50  0001 C CNN
+F 3 "" H 2165 2610 50  0001 C CNN
+	1    2165 2610
+	-1   0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_6POS J7
+U 1 1 61B76748
+P 1540 2510
+F 0 "J7" H 1840 2760 60  0000 L CNN
+F 1 "B6B-XH-ALFSN" H 1490 2660 60  0000 L CNN
+F 2 "DriverBoard:JST6Way" H 1940 2250 60  0001 C CNN
+F 3 "" H 1540 2510 60  0000 C CNN
+	1    1540 2510
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1540 2510 1890 2510
+Wire Wire Line
+	1890 2510 1890 2450
+Wire Notes Line style solid
+	730  2040 2680 2040
+Wire Notes Line style solid
+	730  3290 2680 3290
+Text GLabel 1655 4130 2    50   Input ~ 0
+Drive1-Enc-Bout
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J1
+U 1 1 61B78AD8
+P 1355 4330
+F 0 "J1" H 1462 4797 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 4706 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 4330 50  0001 L BNN
+F 3 "" H 1355 4330 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 4330 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 4330 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 4330 50  0001 L BNN "STANDARD"
+	1    1355 4330
+	1    0    0    -1  
+$EndComp
+Text Notes 655  5380 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  5480 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  5580 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  5680 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J3
+U 1 1 61B8D665
+P 1355 5530
+F 0 "J3" H 1462 5997 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 5906 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 5530 50  0001 L BNN
+F 3 "" H 1355 5530 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 5530 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 5530 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 5530 50  0001 L BNN "STANDARD"
+	1    1355 5530
+	1    0    0    -1  
+$EndComp
+Text Notes 655  6580 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  6680 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  6780 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  6880 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J5
+U 1 1 61B9AE1E
+P 1355 6730
+F 0 "J5" H 1462 7197 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 7106 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 6730 50  0001 L BNN
+F 3 "" H 1355 6730 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 6730 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 6730 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 6730 50  0001 L BNN "STANDARD"
+	1    1355 6730
+	1    0    0    -1  
+$EndComp
+Text Notes 2405 4180 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 2405 4280 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 4380 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 4480 0    50   ~ 0
+Hall Sensor VCC
+Text Notes 2405 5430 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 2405 5530 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 5630 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 5730 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J4
+U 1 1 61BBE64C
+P 3105 5480
+F 0 "J4" H 3105 5130 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 5225 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 5480 50  0001 L BNN
+F 3 "" H 3105 5480 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 5480 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 5480 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 5480 50  0001 L BNN "STANDARD"
+	1    3105 5480
+	1    0    0    1   
+$EndComp
+Wire Notes Line style solid
+	655  3580 4155 3580
+Text GLabel 3405 6530 2    50   Input ~ 0
+Steer3-Enc-Bout
+Text Notes 2405 6580 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 2405 6680 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 6780 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 6880 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J6
+U 1 1 61BCA518
+P 3105 6630
+F 0 "J6" H 3105 6265 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 6370 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 6630 50  0001 L BNN
+F 3 "" H 3105 6630 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 6630 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 6630 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 6630 50  0001 L BNN "STANDARD"
+	1    3105 6630
+	1    0    0    1   
+$EndComp
+Text GLabel 5210 7360 2    50   Input ~ 0
+Steer1-INA1
+$Comp
+L DriverBoardSymbols:JST_XH_8POS J11
+U 1 1 61BE2ED4
+P 5210 8060
+F 0 "J11" H 5460 7110 60  0000 C CNN
+F 1 "B8B-XH-ALFSN" H 5460 7210 60  0000 C CNN
+F 2 "DriverBoard:JST8Way" H 5610 7800 60  0001 C CNN
+F 3 "" H 5210 8060 60  0000 C CNN
+	1    5210 8060
+	-1   0    0    1   
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_8POS J12
+U 1 1 61BE4B37
+P 5210 9260
+F 0 "J12" H 5452 8273 60  0000 C CNN
+F 1 "B8B-XH-ALFSN" H 5452 8379 60  0000 C CNN
+F 2 "DriverBoard:JST8Way" H 5610 9000 60  0001 C CNN
+F 3 "" H 5210 9260 60  0000 C CNN
+	1    5210 9260
+	-1   0    0    1   
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_8POS J13
+U 1 1 61BE5E84
+P 5210 10310
+F 0 "J13" H 5460 9360 60  0000 C CNN
+F 1 "B8B-XH-ALFSN" H 5460 9460 60  0000 C CNN
+F 2 "DriverBoard:JST8Way" H 5610 10050 60  0001 C CNN
+F 3 "" H 5210 10310 60  0000 C CNN
+	1    5210 10310
+	-1   0    0    1   
+$EndComp
+$Comp
+L DriverBoardSymbols:R R2
+U 1 1 61BF062A
+P 9705 9725
+F 0 "R2" H 9955 9525 60  0000 C CNN
+F 1 "1kΩ" H 9955 9625 60  0000 C CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9955 9390 60  0001 C CNN
+F 3 "" H 9705 9725 60  0000 C CNN
+	1    9705 9725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10205 9725 10205 9625
+Wire Wire Line
+	9055 9725 9055 9625
+Text GLabel 9055 9625 1    50   Input ~ 0
+LED1
+Text GLabel 10205 9625 1    50   Input ~ 0
+LED2
+$Comp
+L DriverBoardSymbols:JST_XH_6POS J14
+U 1 1 61BFA86C
+P 1580 1635
+F 0 "J14" H 1780 885 60  0000 L CNN
+F 1 "B6B-XH-ALFSN" H 1530 985 60  0000 L CNN
+F 2 "DriverBoard:JST6Way" H 1980 1375 60  0001 C CNN
+F 3 "" H 1580 1635 60  0000 C CNN
+	1    1580 1635
+	-1   0    0    1   
+$EndComp
+Text GLabel 1580 1635 2    50   Input ~ 0
+I2C-2-EXTRA
+Text Notes 15800 9150 0    50   ~ 0
+SCK\n
+Text Notes 15800 9050 0    50   ~ 0
+INT
+$Comp
+L DriverBoardSymbols:JST_XH_8POS J15
+U 1 1 61C0D326
+P 15050 9000
+F 0 "J15" H 15315 9275 60  0000 C CNN
+F 1 "B8B-XH-ALFSN" H 15275 9160 60  0000 C CNN
+F 2 "DriverBoard:JST8Way" H 15450 8740 60  0001 C CNN
+F 3 "" H 15050 9000 60  0000 C CNN
+	1    15050 9000
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	16050 9850 14200 9850
+Text Notes 15800 9750 0    50   ~ 0
+Extra
+Wire Notes Line style solid
+	14200 8550 16050 8550
+Wire Notes Line style solid
+	14200 8550 14200 9850
+$Comp
+L DriverBoardSymbols:MCP2562 U3
+U 1 1 61BEBFCA
+P 13200 2450
+F 0 "U3" H 13200 2917 50  0000 C CNN
+F 1 "MCP2562-E_SN" H 13200 2826 50  0000 C CNN
+F 2 "DriverBoard:DIP787W45P254L1016H533Q8" H 13200 2450 50  0001 L BNN
+F 3 "" H 13200 2450 50  0001 L BNN
+F 4 "Microchip" H 13200 2450 50  0001 L BNN "MANUFACTURER"
+	1    13200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 2350 14400 2350
+Wire Wire Line
+	14400 2350 14400 2450
+Connection ~ 14400 2350
+$Comp
+L DriverBoardSymbols:C C1
+U 1 1 61BF5867
+P 14400 2600
+F 0 "C1" H 14515 2646 50  0000 L CNN
+F 1 "0.1µF" H 14515 2555 50  0000 L CNN
+F 2 "DriverBoard:Footprint_0603" H 14438 2450 50  0001 C CNN
+F 3 "~" H 14400 2600 50  0001 C CNN
+	1    14400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61BF6989
+P 14400 2750
+F 0 "#PWR0102" H 14400 2500 50  0001 C CNN
+F 1 "GND" H 14405 2577 50  0000 C CNN
+F 2 "" H 14400 2750 50  0001 C CNN
+F 3 "" H 14400 2750 50  0001 C CNN
+	1    14400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 2200 14400 2350
+Wire Wire Line
+	13900 2250 13950 2250
+Wire Wire Line
+	13950 2250 13950 1550
+Wire Wire Line
+	13950 1550 14100 1550
+$Comp
+L DriverBoardSymbols:C C2
+U 1 1 61BFB2A8
+P 14100 1700
+F 0 "C2" H 14215 1746 50  0000 L CNN
+F 1 "0.1µF" H 14215 1655 50  0000 L CNN
+F 2 "DriverBoard:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14138 1550 50  0001 C CNN
+F 3 "~" H 14100 1700 50  0001 C CNN
+	1    14100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61BFB2AE
+P 14100 1850
+F 0 "#PWR0103" H 14100 1600 50  0001 C CNN
+F 1 "GND" H 14105 1677 50  0000 C CNN
+F 2 "" H 14100 1850 50  0001 C CNN
+F 3 "" H 14100 1850 50  0001 C CNN
+	1    14100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 61BFE116
+P 14100 1450
+F 0 "#PWR0104" H 14100 1300 50  0001 C CNN
+F 1 "+5V" H 14115 1623 50  0000 C CNN
+F 2 "" H 14100 1450 50  0001 C CNN
+F 3 "" H 14100 1450 50  0001 C CNN
+	1    14100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 1450 14100 1550
+Connection ~ 14100 1550
+$Comp
+L power:GND #PWR0105
+U 1 1 61C00823
+P 13950 2850
+F 0 "#PWR0105" H 13950 2600 50  0001 C CNN
+F 1 "GND" H 13955 2677 50  0000 C CNN
+F 2 "" H 13950 2850 50  0001 C CNN
+F 3 "" H 13950 2850 50  0001 C CNN
+	1    13950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 2650 13950 2650
+Wire Wire Line
+	13950 2650 13950 2850
+Text GLabel 13900 2450 2    50   Input ~ 0
+CAN1-RXD
+Text GLabel 12500 2350 0    50   Input ~ 0
+CAN1-TXD
+Text GLabel 12500 2250 0    50   Input ~ 0
+CAN1-STBY
+$Comp
+L DriverBoardSymbols:R R3
+U 1 1 61C0A753
+P 12050 2900
+F 0 "R3" H 12300 2700 50  0000 C CNN
+F 1 "120Ω" H 12300 2800 50  0000 C CNN
+F 2 "DriverBoard:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11980 2900 50  0001 C CNN
+F 3 "~" H 12050 2900 50  0001 C CNN
+	1    12050 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L DriverBoardSymbols:MCP2562 U4
+U 1 1 61C6745D
+P 13250 4150
+F 0 "U4" H 13250 4617 50  0000 C CNN
+F 1 "MCP2562-E_SN" H 13250 4526 50  0000 C CNN
+F 2 "DriverBoard:DIP787W45P254L1016H533Q8" H 13250 4150 50  0001 L BNN
+F 3 "" H 13250 4150 50  0001 L BNN
+F 4 "Microchip" H 13250 4150 50  0001 L BNN "MANUFACTURER"
+	1    13250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 4050 14450 4050
+Wire Wire Line
+	14450 4050 14450 4150
+Connection ~ 14450 4050
+$Comp
+L DriverBoardSymbols:C C5
+U 1 1 61C6746C
+P 14450 4300
+F 0 "C5" H 14565 4346 50  0000 L CNN
+F 1 "0.1µF" H 14565 4255 50  0000 L CNN
+F 2 "DriverBoard:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14488 4150 50  0001 C CNN
+F 3 "~" H 14450 4300 50  0001 C CNN
+	1    14450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61C67472
+P 14450 4450
+F 0 "#PWR0107" H 14450 4200 50  0001 C CNN
+F 1 "GND" H 14455 4277 50  0000 C CNN
+F 2 "" H 14450 4450 50  0001 C CNN
+F 3 "" H 14450 4450 50  0001 C CNN
+	1    14450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 3900 14450 4050
+Wire Wire Line
+	13950 3950 14000 3950
+Wire Wire Line
+	14000 3950 14000 3250
+Wire Wire Line
+	14000 3250 14150 3250
+$Comp
+L DriverBoardSymbols:C C3
+U 1 1 61C6747C
+P 14150 3400
+F 0 "C3" H 14265 3446 50  0000 L CNN
+F 1 "0.1µF" H 14265 3355 50  0000 L CNN
+F 2 "DriverBoard:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14188 3250 50  0001 C CNN
+F 3 "~" H 14150 3400 50  0001 C CNN
+	1    14150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 61C67482
+P 14150 3550
+F 0 "#PWR0108" H 14150 3300 50  0001 C CNN
+F 1 "GND" H 14155 3377 50  0000 C CNN
+F 2 "" H 14150 3550 50  0001 C CNN
+F 3 "" H 14150 3550 50  0001 C CNN
+	1    14150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 61C67488
+P 14150 3150
+F 0 "#PWR0109" H 14150 3000 50  0001 C CNN
+F 1 "+5V" H 14165 3323 50  0000 C CNN
+F 2 "" H 14150 3150 50  0001 C CNN
+F 3 "" H 14150 3150 50  0001 C CNN
+	1    14150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 3150 14150 3250
+Connection ~ 14150 3250
+$Comp
+L power:GND #PWR0112
+U 1 1 61C67490
+P 14000 4550
+F 0 "#PWR0112" H 14000 4300 50  0001 C CNN
+F 1 "GND" H 14005 4377 50  0000 C CNN
+F 2 "" H 14000 4550 50  0001 C CNN
+F 3 "" H 14000 4550 50  0001 C CNN
+	1    14000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 4350 14000 4350
+Wire Wire Line
+	14000 4350 14000 4550
+Text GLabel 13950 4150 2    50   Input ~ 0
+CAN2-RXD
+Text GLabel 12550 4050 0    50   Input ~ 0
+CAN2-TXD
+Text GLabel 12550 3950 0    50   Input ~ 0
+CAN2-STBY
+$Comp
+L DriverBoardSymbols:MCP2562 U5
+U 1 1 61C9E527
+P 13300 5850
+F 0 "U5" H 13300 6317 50  0000 C CNN
+F 1 "MCP2562-E_SN" H 13300 6226 50  0000 C CNN
+F 2 "DriverBoard:DIP787W45P254L1016H533Q8" H 13300 5850 50  0001 L BNN
+F 3 "" H 13300 5850 50  0001 L BNN
+F 4 "Microchip" H 13300 5850 50  0001 L BNN "MANUFACTURER"
+	1    13300 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 5750 14500 5750
+Wire Wire Line
+	14500 5750 14500 5850
+Connection ~ 14500 5750
+$Comp
+L DriverBoardSymbols:C C6
+U 1 1 61C9E536
+P 14500 6000
+F 0 "C6" H 14615 6046 50  0000 L CNN
+F 1 "0.1µF" H 14615 5955 50  0000 L CNN
+F 2 "DriverBoard:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14538 5850 50  0001 C CNN
+F 3 "~" H 14500 6000 50  0001 C CNN
+	1    14500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 61C9E53C
+P 14500 6150
+F 0 "#PWR0114" H 14500 5900 50  0001 C CNN
+F 1 "GND" H 14505 5977 50  0000 C CNN
+F 2 "" H 14500 6150 50  0001 C CNN
+F 3 "" H 14500 6150 50  0001 C CNN
+	1    14500 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 5600 14500 5750
+Wire Wire Line
+	14000 5650 14050 5650
+Wire Wire Line
+	14050 5650 14050 4950
+Wire Wire Line
+	14050 4950 14200 4950
+$Comp
+L DriverBoardSymbols:C C4
+U 1 1 61C9E546
+P 14200 5100
+F 0 "C4" H 14315 5146 50  0000 L CNN
+F 1 "0.1µF" H 14315 5055 50  0000 L CNN
+F 2 "DriverBoard:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 14238 4950 50  0001 C CNN
+F 3 "~" H 14200 5100 50  0001 C CNN
+	1    14200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 61C9E54C
+P 14200 5250
+F 0 "#PWR0130" H 14200 5000 50  0001 C CNN
+F 1 "GND" H 14205 5077 50  0000 C CNN
+F 2 "" H 14200 5250 50  0001 C CNN
+F 3 "" H 14200 5250 50  0001 C CNN
+	1    14200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 4850 14200 4950
+Connection ~ 14200 4950
+$Comp
+L power:GND #PWR0131
+U 1 1 61C9E554
+P 14050 6250
+F 0 "#PWR0131" H 14050 6000 50  0001 C CNN
+F 1 "GND" H 14055 6077 50  0000 C CNN
+F 2 "" H 14050 6250 50  0001 C CNN
+F 3 "" H 14050 6250 50  0001 C CNN
+	1    14050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 6050 14050 6050
+Wire Wire Line
+	14050 6050 14050 6250
+Text GLabel 14000 5850 2    50   Input ~ 0
+CAN3-RXD
+Text GLabel 12600 5750 0    50   Input ~ 0
+CAN3-TXD
+Text GLabel 12600 5650 0    50   Input ~ 0
+CAN3-STBY
+$Comp
+L DriverBoardSymbols:R R5
+U 1 1 61C9E565
+P 12050 6300
+F 0 "R5" H 12300 6100 50  0000 C CNN
+F 1 "120Ω" H 12300 6200 50  0000 C CNN
+F 2 "DriverBoard:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11980 6300 50  0001 C CNN
+F 3 "~" H 12050 6300 50  0001 C CNN
+	1    12050 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 61CA2CF2
+P 14200 4850
+F 0 "#PWR0132" H 14200 4700 50  0001 C CNN
+F 1 "+5V" H 14215 5023 50  0000 C CNN
+F 2 "" H 14200 4850 50  0001 C CNN
+F 3 "" H 14200 4850 50  0001 C CNN
+	1    14200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_2POS J19
+U 1 1 61CA4284
+P 12650 3300
+F 0 "J19" H 12880 3296 50  0000 L CNN
+F 1 "B2B-XH-A(LF)(SN)" H 12880 3205 50  0000 L CNN
+F 2 "DriverBoard:JST2Way" H 12650 3300 50  0001 L BNN
+F 3 "" H 12650 3300 50  0001 L BNN
+F 4 "B2B-XH-A(LF)(SN)" H 12650 3300 50  0001 L BNN "MP"
+F 5 "None" H 12650 3300 50  0001 L BNN "PACKAGE"
+F 6 "None" H 12650 3300 50  0001 L BNN "PRICE"
+F 7 "Connector Header Through Hole 2 position 0.098 (2.50mm)" H 12650 3300 50  0001 L BNN "DESCRIPTION"
+F 8 "JST Sales" H 12650 3300 50  0001 L BNN "MF"
+F 9 "In Stock" H 12650 3300 50  0001 L BNN "AVAILABILITY"
+	1    12650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_2POS J20
+U 1 1 61CB3B99
+P 12650 5000
+F 0 "J20" H 12880 4996 50  0000 L CNN
+F 1 "B2B-XH-A(LF)(SN)" H 12880 4905 50  0000 L CNN
+F 2 "DriverBoard:JST2Way" H 12650 5000 50  0001 L BNN
+F 3 "" H 12650 5000 50  0001 L BNN
+F 4 "B2B-XH-A(LF)(SN)" H 12650 5000 50  0001 L BNN "MP"
+F 5 "None" H 12650 5000 50  0001 L BNN "PACKAGE"
+F 6 "None" H 12650 5000 50  0001 L BNN "PRICE"
+F 7 "Connector Header Through Hole 2 position 0.098 (2.50mm)" H 12650 5000 50  0001 L BNN "DESCRIPTION"
+F 8 "JST Sales" H 12650 5000 50  0001 L BNN "MF"
+F 9 "In Stock" H 12650 5000 50  0001 L BNN "AVAILABILITY"
+	1    12650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_2POS J21
+U 1 1 61CBF36E
+P 12700 6700
+F 0 "J21" H 12930 6696 50  0000 L CNN
+F 1 "B2B-XH-A(LF)(SN)" H 12930 6605 50  0000 L CNN
+F 2 "DriverBoard:JST2Way" H 12700 6700 50  0001 L BNN
+F 3 "" H 12700 6700 50  0001 L BNN
+F 4 "B2B-XH-A(LF)(SN)" H 12700 6700 50  0001 L BNN "MP"
+F 5 "None" H 12700 6700 50  0001 L BNN "PACKAGE"
+F 6 "None" H 12700 6700 50  0001 L BNN "PRICE"
+F 7 "Connector Header Through Hole 2 position 0.098 (2.50mm)" H 12700 6700 50  0001 L BNN "DESCRIPTION"
+F 8 "JST Sales" H 12700 6700 50  0001 L BNN "MF"
+F 9 "In Stock" H 12700 6700 50  0001 L BNN "AVAILABILITY"
+	1    12700 6700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	15450 7050 15450 1200
+Wire Notes Line style solid
+	15450 1200 11450 1200
+Wire Notes Line style solid
+	11450 1200 11450 7050
+Wire Notes Line style solid
+	11450 7050 15450 7050
+Text Notes 11500 1350 0    50   ~ 10
+CAN Transcievers
+Text Notes 13050 2450 0    50   ~ 0
+Primary
+Text Notes 13050 4150 0    50   ~ 0
+Secondary
+Text Notes 13100 5850 0    50   ~ 0
+Tertiary
+Wire Notes Line style solid
+	2680 735  2680 1785
+Wire Notes Line style solid
+	780  735  780  1785
+Text GLabel 12925 9120 2    50   Input ~ 0
+SabreTX
+Text Notes 12325 8820 0    50   ~ 10
+SabreTooth TX
+$Comp
+L power:+5V #PWR0115
+U 1 1 61A15ADB
+P 15450 9750
+F 0 "#PWR0115" H 15450 9600 50  0001 C CNN
+F 1 "+5V" H 15400 9900 50  0000 C CNN
+F 2 "" H 15450 9750 50  0001 C CNN
+F 3 "" H 15450 9750 50  0001 C CNN
+	1    15450 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15050 9600 15300 9600
+Wire Wire Line
+	15300 9600 15300 9750
+Wire Wire Line
+	15300 9750 15450 9750
+Text GLabel 1655 4230 2    50   Input ~ 0
+Drive1-Enc-Aout
+Text GLabel 3405 4130 2    50   Input ~ 0
+Steer1-Enc-Bout
+Text Notes 2455 3680 0    50   ~ 10
+Steering Motor Encoders\n
+Wire Notes Line style solid
+	16050 8550 16050 9850
+Text Notes 655  7580 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  7680 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  7780 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  7880 0    50   ~ 0
+Hall Sensor VCC
+Wire Wire Line
+	1655 7830 1755 7830
+Wire Wire Line
+	1655 7730 1905 7730
+Wire Wire Line
+	1905 7730 1905 7780
+$Comp
+L power:GND #PWR0148
+U 1 1 61E01678
+P 1905 7780
+F 0 "#PWR0148" H 1905 7530 50  0001 C CNN
+F 1 "GND" H 1910 7607 50  0000 C CNN
+F 2 "" H 1905 7780 50  0001 C CNN
+F 3 "" H 1905 7780 50  0001 C CNN
+	1    1905 7780
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1655 9030 1805 9030
+Wire Wire Line
+	1655 8930 1955 8930
+Wire Wire Line
+	1655 10230 1805 10230
+Wire Wire Line
+	1655 10130 1955 10130
+$Comp
+L power:GND #PWR0149
+U 1 1 61E016A0
+P 1955 10130
+F 0 "#PWR0149" H 1955 9880 50  0001 C CNN
+F 1 "GND" H 1960 9957 50  0000 C CNN
+F 2 "" H 1955 10130 50  0001 C CNN
+F 3 "" H 1955 10130 50  0001 C CNN
+	1    1955 10130
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 61E016A6
+P 1955 8930
+F 0 "#PWR0150" H 1955 8680 50  0001 C CNN
+F 1 "GND" H 1960 8757 50  0000 C CNN
+F 2 "" H 1955 8930 50  0001 C CNN
+F 3 "" H 1955 8930 50  0001 C CNN
+	1    1955 8930
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0151
+U 1 1 61E016AC
+P 1755 7830
+F 0 "#PWR0151" H 1755 7680 50  0001 C CNN
+F 1 "+5V" H 1755 7965 50  0000 C CNN
+F 2 "" H 1755 7830 50  0001 C CNN
+F 3 "" H 1755 7830 50  0001 C CNN
+	1    1755 7830
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0152
+U 1 1 61E016BE
+P 1805 9030
+F 0 "#PWR0152" H 1805 8880 50  0001 C CNN
+F 1 "+5V" H 1805 9165 50  0000 C CNN
+F 2 "" H 1805 9030 50  0001 C CNN
+F 3 "" H 1805 9030 50  0001 C CNN
+	1    1805 9030
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0153
+U 1 1 61E016C4
+P 1805 10230
+F 0 "#PWR0153" H 1805 10080 50  0001 C CNN
+F 1 "+5V" H 1805 10365 50  0000 C CNN
+F 2 "" H 1805 10230 50  0001 C CNN
+F 3 "" H 1805 10230 50  0001 C CNN
+	1    1805 10230
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1655 8730 2    50   Input ~ 0
+Drive5-Enc-Bout
+Text GLabel 1655 8830 2    50   Input ~ 0
+Drive5-Enc-Aout
+Text GLabel 1655 9930 2    50   Input ~ 0
+Drive6-Enc-Bout
+Text GLabel 1655 10030 2    50   Input ~ 0
+Drive6-Enc-Aout
+Text GLabel 1655 7530 2    50   Input ~ 0
+Drive4-Enc-Bout
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J29
+U 1 1 61E016DC
+P 1355 7730
+F 0 "J29" H 1462 8197 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 8106 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 7730 50  0001 L BNN
+F 3 "" H 1355 7730 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 7730 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 7730 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 7730 50  0001 L BNN "STANDARD"
+	1    1355 7730
+	1    0    0    -1  
+$EndComp
+Text Notes 655  8780 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  8880 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  8980 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  9080 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J24
+U 1 1 61E016EA
+P 1355 8930
+F 0 "J24" H 1462 9397 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 9306 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 8930 50  0001 L BNN
+F 3 "" H 1355 8930 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 8930 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 8930 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 8930 50  0001 L BNN "STANDARD"
+	1    1355 8930
+	1    0    0    -1  
+$EndComp
+Text Notes 655  9980 0    50   ~ 0
+Hall Sensor B Vout
+Text Notes 655  10080 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 655  10180 0    50   ~ 0
+Hall Sensor GND
+Text Notes 655  10280 0    50   ~ 0
+Hall Sensor VCC
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J25
+U 1 1 61E016F7
+P 1355 10130
+F 0 "J25" H 1462 10597 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 1462 10506 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 1355 10130 50  0001 L BNN
+F 3 "" H 1355 10130 50  0001 L BNN
+F 4 "JST Sales America Inc" H 1355 10130 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 1355 10130 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 1355 10130 50  0001 L BNN "STANDARD"
+	1    1355 10130
+	1    0    0    -1  
+$EndComp
+Text GLabel 1655 7630 2    50   Input ~ 0
+Drive4-Enc-Aout
+Wire Notes Line style solid
+	655  3580 655  10630
+Wire Notes Line style solid
+	730  3290 730  2040
+Text GLabel 3405 7530 2    50   Input ~ 0
+Steer4-Enc-Bout
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J28
+U 1 1 61E01721
+P 3105 10030
+F 0 "J28" H 3105 9655 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 9750 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 10030 50  0001 L BNN
+F 3 "" H 3105 10030 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 10030 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 10030 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 10030 50  0001 L BNN "STANDARD"
+	1    3105 10030
+	1    0    0    1   
+$EndComp
+Text Notes 2405 10280 0    50   ~ 0
+Hall Sensor VCC
+Text Notes 2405 10180 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 10080 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 9980 0    50   ~ 0
+Hall Sensor B Vout
+Text GLabel 3405 9930 2    50   Input ~ 0
+Steer6-Enc-Bout
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J27
+U 1 1 61E01711
+P 3105 8880
+F 0 "J27" H 3100 8520 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 8610 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 8880 50  0001 L BNN
+F 3 "" H 3105 8880 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 8880 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 8880 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 8880 50  0001 L BNN "STANDARD"
+	1    3105 8880
+	1    0    0    1   
+$EndComp
+Text Notes 2405 9130 0    50   ~ 0
+Hall Sensor VCC
+Text Notes 2405 9030 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 8930 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 8830 0    50   ~ 0
+Hall Sensor B Vout
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J26
+U 1 1 61E01704
+P 3105 7630
+F 0 "J26" H 3105 7275 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 7375 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 7630 50  0001 L BNN
+F 3 "" H 3105 7630 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 7630 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 7630 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 7630 50  0001 L BNN "STANDARD"
+	1    3105 7630
+	1    0    0    1   
+$EndComp
+Text Notes 2405 7880 0    50   ~ 0
+Hall Sensor VCC
+Text Notes 2405 7780 0    50   ~ 0
+Hall Sensor GND
+Text Notes 2405 7680 0    50   ~ 0
+Hall Sensor A Vout
+Text Notes 2405 7580 0    50   ~ 0
+Hall Sensor B Vout
+Text GLabel 3405 10030 2    50   Input ~ 0
+Steer6-Enc-Aout
+Text GLabel 3405 8880 2    50   Input ~ 0
+Steer5-Enc-Aout
+Text GLabel 3405 8780 2    50   Input ~ 0
+Steer5-Enc-Bout
+Text GLabel 3405 7630 2    50   Input ~ 0
+Steer4-Enc-Aout
+$Comp
+L power:+5V #PWR0154
+U 1 1 61E016CA
+P 3555 10230
+F 0 "#PWR0154" H 3555 10080 50  0001 C CNN
+F 1 "+5V" H 3555 10365 50  0000 C CNN
+F 2 "" H 3555 10230 50  0001 C CNN
+F 3 "" H 3555 10230 50  0001 C CNN
+	1    3555 10230
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0155
+U 1 1 61E016B8
+P 3555 9080
+F 0 "#PWR0155" H 3555 8930 50  0001 C CNN
+F 1 "+5V" H 3555 9210 50  0000 C CNN
+F 2 "" H 3555 9080 50  0001 C CNN
+F 3 "" H 3555 9080 50  0001 C CNN
+	1    3555 9080
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0156
+U 1 1 61E016B2
+P 3555 7830
+F 0 "#PWR0156" H 3555 7680 50  0001 C CNN
+F 1 "+5V" H 3555 7965 50  0000 C CNN
+F 2 "" H 3555 7830 50  0001 C CNN
+F 3 "" H 3555 7830 50  0001 C CNN
+	1    3555 7830
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 61E0169A
+P 3705 10130
+F 0 "#PWR0157" H 3705 9880 50  0001 C CNN
+F 1 "GND" H 3710 9957 50  0000 C CNN
+F 2 "" H 3705 10130 50  0001 C CNN
+F 3 "" H 3705 10130 50  0001 C CNN
+	1    3705 10130
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 61E01694
+P 3705 8980
+F 0 "#PWR0158" H 3705 8730 50  0001 C CNN
+F 1 "GND" H 3710 8807 50  0000 C CNN
+F 2 "" H 3705 8980 50  0001 C CNN
+F 3 "" H 3705 8980 50  0001 C CNN
+	1    3705 8980
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 61E0168E
+P 3705 7730
+F 0 "#PWR0159" H 3705 7480 50  0001 C CNN
+F 1 "GND" H 3710 7557 50  0000 C CNN
+F 2 "" H 3705 7730 50  0001 C CNN
+F 3 "" H 3705 7730 50  0001 C CNN
+	1    3705 7730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3405 10130 3705 10130
+Wire Wire Line
+	3405 10230 3555 10230
+Wire Wire Line
+	3405 8980 3705 8980
+Wire Wire Line
+	3405 9080 3555 9080
+Wire Wire Line
+	3405 7730 3705 7730
+Wire Wire Line
+	3405 7830 3555 7830
+Wire Notes Line style solid
+	4155 10630 655  10630
+Text GLabel 15050 9400 2    50   Input ~ 0
+SPI_1_CS
+Text GLabel 15050 9200 2    50   Input ~ 0
+SPI_1_MOSI
+Text GLabel 15050 9100 2    50   Input ~ 0
+SPI_1_SCK
+Text GLabel 15050 9000 2    50   Input ~ 0
+SPI_1_INT
+Text GLabel 15050 9300 2    50   Input ~ 0
+SPI_1_MISO
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 61EFE005
+P 14500 5600
+F 0 "#PWR0101" H 14500 5450 50  0001 C CNN
+F 1 "+3V3" H 14515 5773 50  0000 C CNN
+F 2 "" H 14500 5600 50  0001 C CNN
+F 3 "" H 14500 5600 50  0001 C CNN
+	1    14500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 61EFE7D0
+P 14450 3900
+F 0 "#PWR0106" H 14450 3750 50  0001 C CNN
+F 1 "+3V3" H 14465 4073 50  0000 C CNN
+F 2 "" H 14450 3900 50  0001 C CNN
+F 3 "" H 14450 3900 50  0001 C CNN
+	1    14450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 61EFF1FB
+P 14400 2200
+F 0 "#PWR0113" H 14400 2050 50  0001 C CNN
+F 1 "+3V3" H 14415 2373 50  0000 C CNN
+F 2 "" H 14400 2200 50  0001 C CNN
+F 3 "" H 14400 2200 50  0001 C CNN
+	1    14400 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 15050 9700
+NoConn ~ 9850 8500
+NoConn ~ 9700 8500
+NoConn ~ 9550 8500
+NoConn ~ 9900 1500
+NoConn ~ 9750 1500
+NoConn ~ 9550 1500
+$Comp
+L power:+5V #PWR0162
+U 1 1 61E321CC
+P 9300 1500
+F 0 "#PWR0162" H 9300 1350 50  0001 C CNN
+F 1 "+5V" H 9315 1673 50  0000 C CNN
+F 2 "" H 9300 1500 50  0001 C CNN
+F 3 "" H 9300 1500 50  0001 C CNN
+	1    9300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0163
+U 1 1 61E32E23
+P 9200 1500
+F 0 "#PWR0163" H 9200 1350 50  0001 C CNN
+F 1 "+5V" H 9215 1673 50  0000 C CNN
+F 2 "" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0164
+U 1 1 61E33DFE
+P 9000 1500
+F 0 "#PWR0164" H 9000 1350 50  0001 C CNN
+F 1 "+3V3" H 9015 1673 50  0000 C CNN
+F 2 "" H 9000 1500 50  0001 C CNN
+F 3 "" H 9000 1500 50  0001 C CNN
+	1    9000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0165
+U 1 1 61E3489B
+P 8850 1500
+F 0 "#PWR0165" H 8850 1350 50  0001 C CNN
+F 1 "+3V3" H 8865 1673 50  0000 C CNN
+F 2 "" H 8850 1500 50  0001 C CNN
+F 3 "" H 8850 1500 50  0001 C CNN
+	1    8850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 61E34EB9
+P 8750 1500
+F 0 "#PWR0166" H 8750 1350 50  0001 C CNN
+F 1 "+3V3" H 8765 1673 50  0000 C CNN
+F 2 "" H 8750 1500 50  0001 C CNN
+F 3 "" H 8750 1500 50  0001 C CNN
+	1    8750 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7950 2000
+NoConn ~ 7950 1800
+NoConn ~ 7950 1700
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J30
+U 1 1 61E7B5D8
+P 12625 9320
+F 0 "J30" H 12825 9120 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 12675 9670 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 12625 9320 50  0001 L BNN
+F 3 "" H 12625 9320 50  0001 L BNN
+F 4 "JST Sales America Inc" H 12625 9320 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 12625 9320 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 12625 9320 50  0001 L BNN "STANDARD"
+	1    12625 9320
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	13675 8720 13675 9620
+Wire Notes Line style solid
+	12275 8720 13675 8720
+Wire Notes Line style solid
+	12275 8720 12275 9620
+Wire Notes Line style solid
+	12275 9620 13675 9620
+Wire Notes Line style solid
+	14300 7250 11450 7250
+Wire Notes Line style solid
+	11450 7250 11450 8000
+Wire Notes Line style solid
+	14300 8000 14300 7250
+Text Notes 11500 7400 0    50   ~ 10
+Turret Servos\n
+Wire Wire Line
+	8750 8500 8750 8600
+$Comp
+L power:GND #PWR0117
+U 1 1 61F80372
+P 8750 8600
+F 0 "#PWR0117" H 8750 8350 50  0001 C CNN
+F 1 "GND" H 8755 8427 50  0000 C CNN
+F 2 "" H 8750 8600 50  0001 C CNN
+F 3 "" H 8750 8600 50  0001 C CNN
+	1    8750 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DriverBoardSymbols:JST_XH_3POS J31
+U 1 1 61FB9DB6
+P 12500 7750
+F 0 "J31" H 12430 7410 50  0000 L CNN
+F 1 "B3B-XH-A(LF)(SN)" H 12130 7500 50  0000 L CNN
+F 2 "DriverBoard:JST3Way" H 12500 7750 50  0001 C CNN
+F 3 "~" H 12500 7750 50  0001 C CNN
+	1    12500 7750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 61FBBA31
+P 11650 7750
+F 0 "#PWR0118" H 11650 7500 50  0001 C CNN
+F 1 "GND" H 11655 7577 50  0000 C CNN
+F 2 "" H 11650 7750 50  0001 C CNN
+F 3 "" H 11650 7750 50  0001 C CNN
+	1    11650 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0142
+U 1 1 61FBDA08
+P 12050 7650
+F 0 "#PWR0142" H 12050 7500 50  0001 C CNN
+F 1 "+5V" H 12065 7823 50  0000 C CNN
+F 2 "" H 12050 7650 50  0001 C CNN
+F 3 "" H 12050 7650 50  0001 C CNN
+	1    12050 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 7650 12050 7650
+Wire Wire Line
+	12300 7750 11650 7750
+Text GLabel 12300 7850 0    50   Input ~ 0
+TurretPWM1
+$Comp
+L DriverBoardSymbols:JST_XH_3POS J32
+U 1 1 61FE6606
+P 13800 7750
+F 0 "J32" H 13730 7410 50  0000 L CNN
+F 1 "B3B-XH-A(LF)(SN)" H 13435 7520 50  0000 L CNN
+F 2 "DriverBoard:JST3Way" H 13800 7750 50  0001 C CNN
+F 3 "~" H 13800 7750 50  0001 C CNN
+	1    13800 7750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 61FE660C
+P 12950 7750
+F 0 "#PWR0143" H 12950 7500 50  0001 C CNN
+F 1 "GND" H 12955 7577 50  0000 C CNN
+F 2 "" H 12950 7750 50  0001 C CNN
+F 3 "" H 12950 7750 50  0001 C CNN
+	1    12950 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0144
+U 1 1 61FE6612
+P 13350 7650
+F 0 "#PWR0144" H 13350 7500 50  0001 C CNN
+F 1 "+5V" H 13365 7823 50  0000 C CNN
+F 2 "" H 13350 7650 50  0001 C CNN
+F 3 "" H 13350 7650 50  0001 C CNN
+	1    13350 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 7650 13350 7650
+Wire Wire Line
+	13600 7750 12950 7750
+Text GLabel 13600 7850 0    50   Input ~ 0
+TurretPWM2
+Wire Notes Line style solid
+	14300 8000 11450 8000
+$Comp
+L DriverBoardSymbols:R R1
+U 1 1 61BE9D22
+P 8205 9725
+F 0 "R1" H 8455 9925 60  0000 C CNN
+F 1 "1kΩ" H 8455 9825 60  0000 C CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8455 9390 60  0001 C CNN
+F 3 "" H 8205 9725 60  0000 C CNN
+	1    8205 9725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9905 9725 9705 9725
+Wire Wire Line
+	8705 9725 8755 9725
+$Comp
+L DriverBoardSymbols:STM32F7 U1
+U 1 1 61DDA08C
+P 9150 5000
+F 0 "U1" H 9150 5450 50  0000 C CNN
+F 1 "STM32F767ZITx" H 9150 5300 50  0000 C CNN
+F 2 "DriverBoard:STM32" H 8150 1600 50  0001 R CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	8105 9275 10305 9275
+Wire Notes Line style solid
+	8105 10225 10305 10225
+$Comp
+L DriverBoardSymbols:JST_XH_4POS J2
+U 1 1 61BA9BF1
+P 3105 4230
+F 0 "J2" H 3100 3870 50  0000 C CNN
+F 1 "B4B-XH-A(LF)(SN)" H 3105 3970 50  0000 C CNN
+F 2 "DriverBoard:JST4Way" H 3105 4230 50  0001 L BNN
+F 3 "" H 3105 4230 50  0001 L BNN
+F 4 "JST Sales America Inc" H 3105 4230 50  0001 L BNN "MANUFACTURER"
+F 5 "NA" H 3105 4230 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendation" H 3105 4230 50  0001 L BNN "STANDARD"
+	1    3105 4230
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12925 9120 12925 9220
+Connection ~ 12925 9220
+Wire Wire Line
+	12925 9220 12925 9320
+Connection ~ 12925 9320
+Wire Wire Line
+	12925 9320 12925 9420
+Wire Wire Line
+	2145 1235 1580 1235
+Text GLabel 3565 1960 0    50   Input ~ 0
+I2C-2-SDA
+Text GLabel 3565 2260 0    50   Input ~ 0
+I2C-2-SCL
+$Comp
+L DriverBoardSymbols:R R6
+U 1 1 623E4991
+P 3565 1460
+F 0 "R6" V 3762 1539 60  0000 L CNN
+F 1 "1k" V 3868 1539 60  0000 L CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3815 1125 60  0001 C CNN
+F 3 "" H 3565 1460 60  0000 C CNN
+	1    3565 1460
+	0    1    1    0   
+$EndComp
+$Comp
+L DriverBoardSymbols:R R7
+U 1 1 623E5C84
+P 4015 1460
+F 0 "R7" V 4212 1539 60  0000 L CNN
+F 1 "1k" V 4318 1539 60  0000 L CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4265 1125 60  0001 C CNN
+F 3 "" H 4015 1460 60  0000 C CNN
+	1    4015 1460
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3565 2260 4015 2260
+Wire Wire Line
+	4015 1960 4015 2260
+Wire Wire Line
+	3765 1360 3765 1460
+Wire Wire Line
+	3765 1460 4015 1460
+Wire Wire Line
+	3765 1460 3565 1460
+Connection ~ 3765 1460
+Text GLabel 4565 1960 0    50   Input ~ 0
+I2C-4-SDA
+Text GLabel 4565 2260 0    50   Input ~ 0
+I2C-4-SCL
+$Comp
+L DriverBoardSymbols:R R8
+U 1 1 624330C9
+P 4565 1460
+F 0 "R8" V 4762 1539 60  0000 L CNN
+F 1 "1k" V 4868 1539 60  0000 L CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4815 1125 60  0001 C CNN
+F 3 "" H 4565 1460 60  0000 C CNN
+	1    4565 1460
+	0    1    1    0   
+$EndComp
+$Comp
+L DriverBoardSymbols:R R9
+U 1 1 62433D8D
+P 4965 1460
+F 0 "R9" V 5162 1539 60  0000 L CNN
+F 1 "1k" V 5268 1539 60  0000 L CNN
+F 2 "DriverBoard:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5215 1125 60  0001 C CNN
+F 3 "" H 4965 1460 60  0000 C CNN
+	1    4965 1460
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4565 2260 4965 2260
+Wire Wire Line
+	4965 2260 4965 1960
+Wire Wire Line
+	4765 1360 4765 1460
+Wire Wire Line
+	4765 1460 4965 1460
+Wire Wire Line
+	4765 1460 4565 1460
+Connection ~ 4765 1460
+Wire Notes Line style solid
+	5215 2460 3015 2460
+Text Notes 3065 1210 0    50   ~ 10
+I2C Pullups\n
+Wire Notes Line style solid
+	5215 2460 5215 1060
+Wire Notes Line style solid
+	3015 1060 5215 1060
+Wire Notes Line style solid
+	2680 2040 2680 3290
+Wire Notes Line style solid
+	3015 2460 3015 1060
+Text GLabel 10350 5900 2    50   Input ~ 0
+Steer1-PWMB
+Text GLabel 10350 6200 2    50   Input ~ 0
+Steer1-INB2
+Text GLabel 10350 6300 2    50   Input ~ 0
+Steer1-INB1
+Text GLabel 10350 6000 2    50   Input ~ 0
+Steer1-PWMA
+Text GLabel 10350 7000 2    50   Input ~ 0
+Steer1-INA2
+Text GLabel 7950 3600 0    50   Input ~ 0
+Steer1-INA1
+Text GLabel 7950 6300 0    50   Input ~ 0
+Steer2-INB2
+Text GLabel 7950 7700 0    50   Input ~ 0
+Steer2-PWMB
+Text GLabel 10350 8300 2    50   Input ~ 0
+Steer2-INB1
+Text GLabel 10350 8200 2    50   Input ~ 0
+Steer2-PWMA
+Text GLabel 10350 2200 2    50   Input ~ 0
+Steer2-INA1
+Text GLabel 10350 2300 2    50   Input ~ 0
+Steer2-INA2
+Text GLabel 10350 5800 2    50   Input ~ 0
+Steer3-PWMB
+Text GLabel 10350 3200 2    50   Input ~ 0
+Steer3-INB2
+Text GLabel 10350 4600 2    50   Input ~ 0
+Steer3-INB1
+Text GLabel 10350 4700 2    50   Input ~ 0
+Steer3-PWMA
+Text GLabel 10350 4900 2    50   Input ~ 0
+Steer3-INA2
+Text GLabel 10350 5700 2    50   Input ~ 0
+Steer3-INA1
+Text GLabel 10350 4300 2    50   Input ~ 0
+I2C-4-SDA
+Text GLabel 10350 4200 2    50   Input ~ 0
+I2C-4-SCL
+Text GLabel 10350 4400 2    50   Input ~ 0
+I2C-2-SCL
+Text GLabel 10350 4500 2    50   Input ~ 0
+I2C-2-SDA
+Text GLabel 10350 2900 2    50   Input ~ 0
+I2C-2-INT
+Text GLabel 10350 2800 2    50   Input ~ 0
+I2C-2-EXTRA
+Text GLabel 10350 2600 2    50   Input ~ 0
+Drive1-Enc-Bout
+Text GLabel 10350 2500 2    50   Input ~ 0
+Drive1-Enc-Aout
+Text GLabel 10350 5500 2    50   Input ~ 0
+Drive2-Enc-Bout
+Text GLabel 7950 5600 0    50   Input ~ 0
+Drive2-Enc-Aout
+Text GLabel 7950 7500 0    50   Input ~ 0
+Drive3-Enc-Bout
+Text GLabel 7950 6500 0    50   Input ~ 0
+Drive3-Enc-Aout
+Text GLabel 7950 5400 0    50   Input ~ 0
+Drive4-Enc-Bout
+Text GLabel 7950 6600 0    50   Input ~ 0
+Drive4-Enc-Aout
+Text GLabel 7950 6800 0    50   Input ~ 0
+Drive5-Enc-Bout
+Text GLabel 7950 4200 0    50   Input ~ 0
+Drive5-Enc-Aout
+Text GLabel 7950 3900 0    50   Input ~ 0
+Drive6-Enc-Bout
+Text GLabel 7950 4000 0    50   Input ~ 0
+Drive6-Enc-Aout
+Text GLabel 7950 3800 0    50   Input ~ 0
+LED1
+Text GLabel 7950 4100 0    50   Input ~ 0
+LED2
+Text GLabel 7950 8300 0    50   Input ~ 0
+CAN3-STBY
+Text GLabel 10350 3800 2    50   Input ~ 0
+CAN3-TXD
+Text GLabel 10350 3700 2    50   Input ~ 0
+CAN3-RXD
+Text GLabel 10350 3900 2    50   Input ~ 0
+CAN2-RXD
+Text GLabel 10350 4000 2    50   Input ~ 0
+CAN2-TXD
+Text GLabel 10350 3400 2    50   Input ~ 0
+CAN2-STBY
+Text GLabel 10350 6900 2    50   Input ~ 0
+CAN1-TXD
+Text GLabel 7950 3500 0    50   Input ~ 0
+CAN1-STBY
+Text GLabel 10350 6800 2    50   Input ~ 0
+CAN1-RXD
+Text GLabel 7950 4700 0    50   Input ~ 0
+SPI_1_INT
+Text GLabel 7950 4500 0    50   Input ~ 0
+SPI_1_SCK
+Text GLabel 7950 4400 0    50   Input ~ 0
+SPI_1_CS
+Text GLabel 7950 4300 0    50   Input ~ 0
+SPI_1_MOSI
+Text GLabel 10350 7500 2    50   Input ~ 0
+SPI_1_MISO
+Text GLabel 7950 4600 0    50   Input ~ 0
+Steer6-Enc-Bout
+Text GLabel 10350 7700 2    50   Input ~ 0
+Steer6-Enc-Aout
+Text GLabel 7950 3400 0    50   Input ~ 0
+Steer5-Enc-Bout
+Text GLabel 7950 6900 0    50   Input ~ 0
+Steer5-Enc-Aout
+Text GLabel 7950 7100 0    50   Input ~ 0
+Steer4-Enc-Bout
+Text GLabel 7950 5200 0    50   Input ~ 0
+Steer4-Enc-Aout
+Text GLabel 10350 5400 2    50   Input ~ 0
+Steer3-Enc-Aout
+Text GLabel 10350 5300 2    50   Input ~ 0
+Steer3-Enc-Bout
+Text GLabel 10350 4100 2    50   Input ~ 0
+Steer2-Enc-Bout
+Text GLabel 10350 6400 2    50   Input ~ 0
+Steer2-Enc-Aout
+Text GLabel 10350 3100 2    50   Input ~ 0
+Steer1-Enc-Aout
+Text GLabel 10350 3000 2    50   Input ~ 0
+Steer1-Enc-Bout
+Text GLabel 10350 6100 2    50   Input ~ 0
+SabreTX
+Text GLabel 7950 5700 0    50   Input ~ 0
+TurretPWM1
+Text GLabel 7950 5800 0    50   Input ~ 0
+TurretPWM2
+$Comp
+L DriverBoardSymbols:Jumper J18
+U 1 1 61C9E55F
+P 12350 6300
+F 0 "J18" H 12415 6460 50  0000 R CNN
+F 1 "Jumper" H 12485 6205 50  0000 R CNN
+F 2 "DriverBoard:2PinHeader" H 12350 6300 50  0001 C CNN
+F 3 "~" H 12350 6300 50  0001 C CNN
+	1    12350 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 6050 12600 6210
+Wire Wire Line
+	12600 6210 12650 6210
+Wire Wire Line
+	12650 6210 12650 6300
+Wire Wire Line
+	12600 5950 11550 5950
+Wire Wire Line
+	11550 5950 11550 6300
+Wire Wire Line
+	11550 6300 11550 6800
+Wire Wire Line
+	11550 6800 12300 6800
+Connection ~ 11550 6300
+Wire Wire Line
+	12650 6300 12650 6545
+Wire Wire Line
+	12650 6545 12300 6545
+Wire Wire Line
+	12300 6545 12300 6700
+Connection ~ 12650 6300
+$Comp
+L DriverBoardSymbols:R R4
+U 1 1 61C674A1
+P 12050 4600
+F 0 "R4" H 12300 4400 50  0000 C CNN
+F 1 "120Ω" H 12300 4500 50  0000 C CNN
+F 2 "DriverBoard:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11980 4600 50  0001 C CNN
+F 3 "~" H 12050 4600 50  0001 C CNN
+	1    12050 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L DriverBoardSymbols:Jumper J17
+U 1 1 61C6749B
+P 12350 4600
+F 0 "J17" H 12420 4760 50  0000 R CNN
+F 1 "Jumper" H 12500 4500 50  0000 R CNN
+F 2 "DriverBoard:2PinHeader" H 12350 4600 50  0001 C CNN
+F 3 "~" H 12350 4600 50  0001 C CNN
+	1    12350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 4350 12550 4515
+Wire Wire Line
+	12550 4515 12650 4515
+Wire Wire Line
+	12650 4515 12650 4600
+Wire Wire Line
+	12650 4600 12650 4865
+Wire Wire Line
+	12650 4865 12250 4865
+Wire Wire Line
+	12250 4865 12250 5000
+Connection ~ 12650 4600
+Wire Wire Line
+	12550 4250 11545 4250
+Wire Wire Line
+	11545 4250 11545 4600
+Wire Wire Line
+	11545 4600 11550 4600
+Wire Wire Line
+	11545 5100 12250 5100
+Wire Wire Line
+	11545 4600 11545 5100
+Connection ~ 11545 4600
+$Comp
+L DriverBoardSymbols:Jumper J23
+U 1 1 61C09482
+P 12350 2900
+F 0 "J23" H 12420 3070 50  0000 R CNN
+F 1 "Jumper" H 12490 2825 50  0000 R CNN
+F 2 "DriverBoard:2PinHeader" H 12350 2900 50  0001 C CNN
+F 3 "~" H 12350 2900 50  0001 C CNN
+	1    12350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 2650 12500 2815
+Wire Wire Line
+	12500 2815 12650 2815
+Wire Wire Line
+	12650 2815 12650 2900
+Wire Wire Line
+	11550 2900 11550 3400
+Wire Wire Line
+	11550 3400 12250 3400
+Wire Wire Line
+	12650 2900 12650 3165
+Wire Wire Line
+	12650 3165 12250 3165
+Wire Wire Line
+	12250 3165 12250 3300
+Connection ~ 12650 2900
+Wire Wire Line
+	12500 2550 11550 2550
+Wire Wire Line
+	11550 2550 11550 2900
+Connection ~ 11550 2900
+Wire Wire Line
+	1540 2610 2165 2610
+Wire Notes Line style solid
+	2365 10630 2365 3585
+Wire Notes Line style solid
+	4155 3580 4155 10630
+Wire Notes Line
+	4155 10630 4150 10630
+$Comp
+L power:+3V3 #PWR0147
+U 1 1 62A67054
+P 2205 1035
+F 0 "#PWR0147" H 2205 885 50  0001 C CNN
+F 1 "+3V3" H 2220 1208 50  0000 C CNN
+F 2 "" H 2205 1035 50  0001 C CNN
+F 3 "" H 2205 1035 50  0001 C CNN
+	1    2205 1035
+	-1   0    0    -1  
+$EndComp
+Text Notes 1620 1130 0    50   ~ 0
+PWR Selection\n
+$Comp
+L power:+3V3 #PWR0160
+U 1 1 62A6DB0E
+P 3765 1360
+F 0 "#PWR0160" H 3765 1210 50  0001 C CNN
+F 1 "+3V3" H 3780 1533 50  0000 C CNN
+F 2 "" H 3765 1360 50  0001 C CNN
+F 3 "" H 3765 1360 50  0001 C CNN
+	1    3765 1360
+	-1   0    0    -1  
+$EndComp
+Text Label 12650 6545 1    50   ~ 0
+CAN3L
+Text Label 11550 5950 0    50   ~ 0
+CAN3H
+Text Label 11550 4250 0    50   ~ 0
+CAN2H
+Text Label 12650 4865 1    50   ~ 0
+CAN2L
+Text Label 12650 3165 1    50   ~ 0
+CAN1L
+Text Label 11550 2550 0    50   ~ 0
+CAN1H
+$Comp
+L DriverBoardSymbols:Conn_01x03 J8
+U 1 1 62CE1F12
+P 2405 1135
+F 0 "J8" H 2405 950 50  0000 C CNN
+F 1 "Conn_01x03" H 2485 1086 50  0001 L CNN
+F 2 "DriverBoard:PinHeader_1x03_P2.54mm_Vertical" H 2405 1135 50  0001 C CNN
+F 3 "~" H 2405 1135 50  0001 C CNN
+	1    2405 1135
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1580 1135 2205 1135
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=2022-04-16 7:28:13 PM
+update=2022-04-24 1:36:23 PM
 version=1
 last_client=kicad
 [general]
@@ -40,6 +40,7 @@ MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.4
 TrackWidth2=0.4
+TrackWidth3=2
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -74,7 +75,7 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=5V
+Name=PWR
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]

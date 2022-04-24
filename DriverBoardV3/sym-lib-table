@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name DriverBoardSymbols)(type Legacy)(uri ${KIPRJMOD}/Symbols&Footprints/Symbol/DriverBoard.lib)(options "")(descr ""))
-  (lib (name DriverBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/DriverBoard-rescue.lib)(options "")(descr ""))
+  (lib (name DriverBoardSymbols)(type Legacy)(uri "C:/Users/Ayden Bourdeau/Desktop/DriverBoardV3/Symbols&Footprints/Symbol/DriverBoard.lib")(options "")(descr ""))
 )
